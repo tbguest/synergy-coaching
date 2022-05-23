@@ -1,0 +1,51 @@
+.nav_container {
+  position: absolute;
+  width: 100%;
+  height: var(--nav-height);
+  background-color: steelblue;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 2rem 0 2rem;
+  margin: 0;
+}
+
+.nav_container a {
+  color: white;
+}
+
+.nav_link {
+  display: none;
+}
+
+.nav_brand {
+  font-size: large;
+  font-family: "Playfair Display";
+  position: absolute;
+  left: 8%;
+}
+
+@media (min-width: 768px) {
+  .nav_brand {
+    font-size: x-large;
+  }
+
+  .burger {
+    display: none;
+  }
+
+  .nav_link {
+    margin: 2rem;
+    display: inline;
+  }
+}
+
+.burger {
+  right: 8%;
+  top: 0;
+  color: white;
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 0;
+  margin: 0;
+}
