@@ -13,10 +13,11 @@
 }
 
 .splash_container {
+  background: linear-gradient(rgba(255, 255, 255, 0), rgb(255, 255, 255));
   position: absolute;
   width: 100%;
   height: calc(100% - var(--nav-height));
-  background-image: url("/windsurf_cropped.jpg");
+  background-image: url("/meadow.jpg");
   background-size: cover;
   bottom: 0;
 }

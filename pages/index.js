@@ -16,7 +16,11 @@ export default function Home() {
       <main className={styles.main}>
         <div className={styles.splash_container}>
           <div className={styles.action_items}>
-            <p className={styles.text}>Book a retreat</p>
+            <p className={styles.text}>
+              “When the basis for your actions is inner alignment with the
+              present moment, your actions become empowered by the intelligence
+              of life itself.” — Eckhart Tolle
+            </p>
             <button>Browse programs</button>
           </div>
         </div>

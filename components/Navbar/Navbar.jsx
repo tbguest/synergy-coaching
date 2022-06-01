@@ -1,4 +1,5 @@
 import styles from "./Navbar.module.css";
+import Link from "next/link";
 import { FiMenu } from "react-icons/fi";
 
 const Navbar = () => {
@@ -12,6 +13,15 @@ const Navbar = () => {
       </a>
       <a className={styles.nav_link} href={"/about"}>
         About
+      </a>
+      <a className={styles.nav_link} href={"/coaching"}>
+        Coaching
+      </a>
+      <a className={styles.nav_link} href={"/retreats"}>
+        Wellness Retreats
+      </a>
+      <a className={styles.nav_link} href={"/contact"}>
+        Contact
       </a>
       <FiMenu className={styles.burger} />
     </nav>
