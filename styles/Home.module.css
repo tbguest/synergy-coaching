@@ -65,3 +65,37 @@
   margin-right: auto;
   max-width: var(--content-max-width);
 }
+
+.coaching_container {
+  /* position: absolute; */
+  position: relative;
+  top: var(--nav-height);
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: var(--content-max-width);
+  background-color: rgb(255, 255, 255, 0.65);
+  border-radius: 8px;
+  padding: 2rem;
+}
+
+.contact_refer {
+  max-width: calc(1.2 * var(--content-max-width));
+  background-color: #ece5c7;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 3rem;
+  margin: 3rem 0 3rem 0;
+}
+
+.contact_button {
+  background-color: #000000;
+  border: none;
+  color: white;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 4px;
+  font-size: large;
+  position: relative;
+  left: 20%;
+}

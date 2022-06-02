@@ -1,7 +1,7 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
-import { Navbar } from "../components/Navbar";
 import { Footer } from "../components/Footer";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -12,7 +12,6 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Navbar />
       <main className={styles.main}>
         <div className={styles.splash_container}>
           <div className={styles.action_items}>
@@ -21,11 +20,17 @@ export default function Home() {
               present moment, your actions become empowered by the intelligence
               of life itself.” — Eckhart Tolle
             </p>
-            <button>Browse programs</button>
+            <Link href={"/retreats"}>
+              <button>
+                <a className={styles.nav_link}>Explore retreats</a>
+              </button>
+            </Link>
           </div>
         </div>
         <div className={styles.content_container}>
           <div className={styles.content}>
+            <p>Call to action</p>
+            <p>Refer to contact page</p>
             <p>
               Aliquip non do laborum laboris aute aliquip enim et exercitation
               reprehenderit. Id anim pariatur irure exercitation aliqua ipsum
@@ -42,6 +47,16 @@ export default function Home() {
               reprehenderit. Minim nostrud non elit non cillum labore. Laboris
               nulla pariatur amet ex. Excepteur duis quis occaecat cillum.
             </p>
+          </div>
+          <div className={styles.contact_refer}>
+            <h3>
+              Reserve a spot, or ask a question. I&apos;d love to hear from you.
+            </h3>
+            <Link href={"/contact"}>
+              <button className={styles.contact_button}>
+                <a className={styles.nav_link}>Get in touch</a>
+              </button>
+            </Link>
           </div>
           <Footer />
         </div>

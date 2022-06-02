@@ -1,8 +1,6 @@
 import Head from "next/head";
 import styles from "../styles/retreats.module.css";
-import { Footer } from "../components/Footer";
-import { Navbar } from "../components/Navbar";
-import { Layout } from "../components/Layout";
+import Image from "next/image";
 
 export default function Retreats() {
   return (
@@ -13,67 +11,76 @@ export default function Retreats() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Layout>
-        <div className={styles.splash_container}></div>
-        <div className={styles.content_container}>
-          <div className={styles.content}>
-            <p>
-              Women Physicians`&apos;` Wellness Retreat July 22-24, 2022 - top
-              of page
-            </p>
-            <p>
-              Join Zenovia for an intimate gathering of women physicians who
-              want to nourish their bodies, minds and spirits at Wild Ocean
-              Lodge.
-            </p>
-            <h2>Women Physician Wellness Retreats</h2>
+      {/* <div className={styles.splash_container}></div> */}
+      {/* <Image
+        width={3648}
+        height={2736}
+        src={"/meadow.jpg"}
+        alt={""}
+        className={styles.image}
+      /> */}
+      <div className={styles.content}>
+        <h1>Wellness Retreats</h1>
+        <h2>Women Physicians&apos; Wellness Retreat</h2>
+        <h3>July 22-24, 2022</h3>
+        <p>
+          Join Zenovia for an intimate gathering of women physicians who want to
+          nourish their bodies, minds and spirits at Wild Ocean Lodge.
+        </p>
 
-            <p>
-              Wild Ocean Lodge is 45 minutes from Halifax on the Aspotogan
-              Peninsula. It is a small acreage embraced by forest on the west,
-              overlooking St. Margaret`&apos;`s Bay to the east.
-            </p>
+        <p>
+          Wild Ocean Lodge is 45 minutes from Halifax on the Aspotogan
+          Peninsula. It is a small acreage embraced by forest on the west,
+          overlooking St. Margaret&apos;s Bay to the east.
+        </p>
 
-            <p>
-              This wellness workshop includes small group work where we will
-              engage in supportive and transformative conversation, journaling,
-              creative self-awareness exercises, breathwork and visualization.
-              We will start each morning with a 45 minute yoga class with yoga
-              instructor Cathy Guest at the Sail Loft Yoga Studio, a 5 minute
-              walk from Wild Ocean Lodge.
-            </p>
+        <p>
+          This wellness workshop includes small group work where we will engage
+          in supportive and transformative conversation, journaling, creative
+          self-awareness exercises, breathwork and visualization. We will start
+          each morning with a 45 minute yoga class with yoga instructor Cathy
+          Guest at the Sail Loft Yoga Studio, a 5 minute walk from Wild Ocean
+          Lodge.
+        </p>
 
-            <p>
-              Healthy and delicious meals will be provided for you by Tyler Haut
-              of Food People. Meals are prepared with locally grown produce and
-              meats, including free range eggs and vegetables from Wild Ocean
-              Lodge and organic staples from Food People. Tyler is happy to
-              accommodate food sensitivities and preferences.
-            </p>
+        <p>
+          Healthy and delicious meals will be provided for you by Tyler Haut of
+          Food People. Meals are prepared with locally grown produce and meats,
+          including free range eggs and vegetables from Wild Ocean Lodge and
+          organic staples from Food People. Tyler is happy to accommodate food
+          sensitivities and preferences.
+        </p>
 
-            <p>
-              Between the group sessions there will be plenty of free time. You
-              can walk the forest paths, sit in contemplation in our gardens,
-              soak in the hot tub, use the yoga studio for your own practice, or
-              swim in the ocean. The Aspotogan peninsula supports trail and road
-              cycling, as well as ocean kayaking. If you need bike or kayak
-              rentals please visit our lovely neighbours at Freewheeling
-              Adventures (rentals not include in retreat fees).
-            </p>
+        <p>
+          Between the group sessions there will be plenty of free time. You can
+          walk the forest paths, sit in contemplation in our gardens, soak in
+          the hot tub, use the yoga studio for your own practice, or swim in the
+          ocean. The Aspotogan peninsula supports trail and road cycling, as
+          well as ocean kayaking. If you need bike or kayak rentals please visit
+          our lovely neighbours at Freewheeling Adventures (rentals not include
+          in retreat fees).
+        </p>
 
-            <p>
-              Check in begins at 7 pm on Friday evening and our first group
-              session begins at 8pm that evening. We will wrap up the retreat on
-              Sunday morning at 11 am.
-            </p>
+        <p>
+          Check in begins at 7 pm on Friday evening and our first group session
+          begins at 8pm that evening. We will wrap up the retreat on Sunday
+          morning at 11 am.
+        </p>
 
-            <p>
-              There are four accommodations to choose from. Prices include the
-              group workshops, yoga classes, meals and accommodations:
-            </p>
-          </div>
-        </div>
-      </Layout>
+        <p>
+          There are four accommodations to choose from. Prices include the group
+          workshops, yoga classes, meals and accommodations:
+        </p>
+
+        {/* <Image
+          width={300}
+          height={300}
+          src={"/butterfly.jpg"}
+          alt={"Butterfly atop a flower"}
+          layout="fill"
+          className={styles.image}
+        /> */}
+      </div>
     </div>
   );
 }
