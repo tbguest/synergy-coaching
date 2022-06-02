@@ -2,6 +2,7 @@ import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import { Footer } from "../components/Footer";
 import Link from "next/link";
+import { Splash } from "../components/Splash";
 
 export default function Home() {
   return (
@@ -12,55 +13,40 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}>
-        <div className={styles.splash_container}>
-          <div className={styles.action_items}>
-            <p className={styles.text}>
-              “When the basis for your actions is inner alignment with the
-              present moment, your actions become empowered by the intelligence
-              of life itself.” — Eckhart Tolle
-            </p>
-            <Link href={"/retreats"}>
-              <button>
-                <a className={styles.nav_link}>Explore retreats</a>
-              </button>
-            </Link>
-          </div>
-        </div>
-        <div className={styles.content_container}>
-          <div className={styles.content}>
-            <p>Call to action</p>
-            <p>Refer to contact page</p>
-            <p>
-              Aliquip non do laborum laboris aute aliquip enim et exercitation
-              reprehenderit. Id anim pariatur irure exercitation aliqua ipsum
-              irure laborum. Duis irure do nulla sint id Lorem cillum. Proident
-              sint qui irure mollit nostrud ad ullamco consequat sunt qui.
-              Occaecat aute nostrud incididunt sunt cillum ipsum. Sunt fugiat in
-              laborum dolor Lorem do reprehenderit ullamco nulla exercitation.
-            </p>
+      <Splash />
+      <div className={styles.content_container}>
+        <div className={styles.content}>
+          <p>Call to action</p>
+          <p>Refer to contact page</p>
+          <p>
+            Aliquip non do laborum laboris aute aliquip enim et exercitation
+            reprehenderit. Id anim pariatur irure exercitation aliqua ipsum
+            irure laborum. Duis irure do nulla sint id Lorem cillum. Proident
+            sint qui irure mollit nostrud ad ullamco consequat sunt qui.
+            Occaecat aute nostrud incididunt sunt cillum ipsum. Sunt fugiat in
+            laborum dolor Lorem do reprehenderit ullamco nulla exercitation.
+          </p>
 
-            <p>
-              In aute eiusmod duis ea mollit amet excepteur magna. Quis amet
-              consequat veniam officia elit. Dolor nisi incididunt mollit Lorem.
-              Minim duis id aliqua sit ipsum do ea et in sunt deserunt
-              reprehenderit. Minim nostrud non elit non cillum labore. Laboris
-              nulla pariatur amet ex. Excepteur duis quis occaecat cillum.
-            </p>
-          </div>
-          <div className={styles.contact_refer}>
-            <h3>
-              Reserve a spot, or ask a question. I&apos;d love to hear from you.
-            </h3>
-            <Link href={"/contact"}>
-              <button className={styles.contact_button}>
-                <a className={styles.nav_link}>Get in touch</a>
-              </button>
-            </Link>
-          </div>
-          <Footer />
+          <p>
+            In aute eiusmod duis ea mollit amet excepteur magna. Quis amet
+            consequat veniam officia elit. Dolor nisi incididunt mollit Lorem.
+            Minim duis id aliqua sit ipsum do ea et in sunt deserunt
+            reprehenderit. Minim nostrud non elit non cillum labore. Laboris
+            nulla pariatur amet ex. Excepteur duis quis occaecat cillum.
+          </p>
         </div>
-      </main>
+        <div className={styles.contact_refer}>
+          <h3>
+            Reserve a spot, or ask a question. I&apos;d love to hear from you.
+          </h3>
+          <Link href={"/contact"}>
+            <button className={styles.contact_button}>
+              <a className={styles.nav_link}>Get in touch</a>
+            </button>
+          </Link>
+        </div>
+        <Footer />
+      </div>
     </div>
   );
 }
