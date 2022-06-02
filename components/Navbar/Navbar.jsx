@@ -5,24 +5,23 @@ import { FiMenu } from "react-icons/fi";
 const Navbar = () => {
   return (
     <nav className={styles.nav_container}>
-      <a className={styles.nav_brand} href={"/"}>
-        <h1>Zenovia Ursuliak</h1>
-      </a>
-      <a className={styles.nav_link} href={"/"}>
-        Home
-      </a>
-      <a className={styles.nav_link} href={"/about"}>
-        About
-      </a>
-      <a className={styles.nav_link} href={"/coaching"}>
-        Coaching
-      </a>
-      <a className={styles.nav_link} href={"/retreats"}>
-        Wellness Retreats
-      </a>
-      <a className={styles.nav_link} href={"/contact"}>
-        Contact
-      </a>
+      <Link href={"/"}>
+        <a className={styles.nav_brand}>
+          <h1>Zenovia Ursuliak</h1>
+        </a>
+      </Link>
+      <Link href={"/"}>
+        <a className={styles.nav_link}>Home</a>
+      </Link>
+      <Link href={"/coaching"}>
+        <a className={styles.nav_link}>Coaching</a>
+      </Link>
+      <Link href={"/retreats"}>
+        <a className={styles.nav_link}>Wellness Retreats</a>
+      </Link>
+      <Link href={"/contact"}>
+        <a className={styles.nav_link}>Contact</a>
+      </Link>
       <FiMenu className={styles.burger} />
     </nav>
   );
