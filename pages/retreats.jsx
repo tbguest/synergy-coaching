@@ -1,6 +1,5 @@
 import styles from "../styles/Page.module.css";
 import Image from "next/image";
-import { Event } from "../components/Event";
 
 export default function Retreats() {
   return (
