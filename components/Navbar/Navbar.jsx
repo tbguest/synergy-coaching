@@ -7,7 +7,7 @@ const Navbar = () => {
     <nav className={styles.nav_container}>
       <Link href={"/"}>
         <a className={styles.nav_brand}>
-          <h1>Zenovia Ursuliak</h1>
+          <h1>Synergy Coaching and Wellness</h1>
         </a>
       </Link>
       <Link href={"/"}>
