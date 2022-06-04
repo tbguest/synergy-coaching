@@ -31,8 +31,8 @@ export default function Coaching() {
         <Image
           width={960}
           height={1280}
-          src={"/butterfly.jpg"}
-          alt={"Butterfly atop a flower"}
+          src={"/rocks.jpg"}
+          alt={"Stacked rocks beside the ocean"}
           className={styles.image}
         />
       </>

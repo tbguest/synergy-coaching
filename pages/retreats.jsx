@@ -6,9 +6,9 @@ export default function Retreats() {
     <div className={styles.container}>
       <div className={styles.image_header}>
         <Image
-          width={3648}
-          height={2736}
-          src={"/meadow.jpg"}
+          width={3641}
+          height={1303}
+          src={"/meadow_cropped.jpg"}
           alt={"View from a green hill overlooking the sea"}
           className={styles.image}
         />
@@ -67,6 +67,45 @@ export default function Retreats() {
           There are four accommodations to choose from. Prices include the group
           workshops, yoga classes, meals and accommodations:
         </p>
+
+        <p>All prices include HST.</p>
+
+        <p>Wild Ocean Lodge:</p>
+        <p>Forestview room (king size bed): $665.25 single occupancy</p>
+        <p>Oceanview room (queen size bed): $665.25 single occupancy</p>
+        <p>Rustic Cabin (queen size bed): $521.50 single occupancy</p>
+
+        <p>
+          People staying at the Wild Ocean Lodge site will share a bathroom,
+          living room and kitchen on the main floor of the lodge.
+        </p>
+
+        <p>
+          Accommodations are also available on site at the Sail Loft Yoga Studio
+          (5 minute walk):
+        </p>
+        <p>
+          Boathouse Apartment (queen size bed): $809.00 single occupancy.
+          Private bathroom, living room and kitchen.
+        </p>
+
+        <p>
+          If you would like to share a room with a friend, the following
+          accommodations are available:
+        </p>
+        <p>Wild Ocean Lodge:</p>
+        <p>
+          Forestview room (king size bed or 2 twin size beds): $550.25 per
+          person
+        </p>
+        <p>Rustic Cabin( 2 queen size beds): $478.38 per person</p>
+
+        <p>Sail Loft Yoga Studio:</p>
+        <p>
+          Boathouse Apartment (queen size bed and queen size mattress): $593.38
+          per person
+        </p>
+
         {/* </Event> */}
       </div>
     </div>

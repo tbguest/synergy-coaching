@@ -39,3 +39,7 @@
   position: relative;
   left: 20%;
 }
+
+.nav_link {
+  font-family: "Playfair Display", serif;
+}
