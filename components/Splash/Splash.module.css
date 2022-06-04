@@ -1,18 +1,25 @@
 .container {
-  position: absolute;
-  width: 100%;
-  height: calc(100% - var(--nav-height));
+  position: relative;
+  width: 100;
+  top: var(--nav-height);
+  height: calc(100vh - var(--nav-height));
   background-image: url("/wave_cropped.jpg");
   background-size: cover;
   bottom: 0;
+  margin: 0;
+  overflow-x: hidden;
+  display: grid;
+  padding: 1rem;
+  grid-template: 1fr / 1fr;
 }
 
 .action_items {
-  position: absolute;
-  left: 50%;
-  top: 15%;
-  font-size: 2rem;
+  font-size: 1.5rem;
   line-height: 3rem;
+  grid-area: 1 / 2 / 2 / 3;
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
 }
 
 .action_items button {
@@ -22,9 +29,9 @@
   font-size: x-large;
   font-family: "Playfair Display", serif;
   border-radius: 5px;
-  position: relative;
-  left: 45%;
   padding: 1rem;
+  max-width: 14rem;
+  margin-left: 20%;
 }
 
 .action_items button:hover {
@@ -34,5 +41,18 @@
 .quote {
   color: white;
   text-shadow: 2px 2px 3px #000000;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
+  padding: 0;
+}
+
+@media (min-width: 768px) {
+  .container {
+    grid-template: 30% 1fr / 40% 60%;
+    padding: 3rem;
+  }
+
+  .action_items {
+    font-size: 2rem;
+    margin: 2rem;
+  }
 }

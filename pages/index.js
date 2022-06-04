@@ -1,6 +1,4 @@
-import Head from "next/head";
 import styles from "../styles/Home.module.css";
-import { Footer } from "../components/Footer";
 import Link from "next/link";
 import { Splash } from "../components/Splash";
 
@@ -31,7 +29,6 @@ export default function Home() {
             </button>
           </Link>
         </div>
-        <Footer />
       </div>
     </div>
   );
