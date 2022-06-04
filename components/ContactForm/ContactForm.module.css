@@ -3,29 +3,81 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  box-shadow: 10px 5px 5px black;
+  /* box-shadow: 5px 5px 5px black; */
+  box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1),
+    0 8px 10px -6px rgb(0 0 0 / 0.1);
+  max-width: 35%;
+  left: 50%;
+  transform: translateX(-50%);
+  top: var(--nav-height);
+  margin-top: 3rem;
+  padding: 1rem;
 }
 
 .form h1 {
   /* "text-2xl font-bold dark:text-gray-50" */
+  font-size: xx-large;
+  font-weight: 600;
+  color: black;
 }
 
 .form_label {
   /* "text-gray-500 font-light mt-8 dark:text-gray-50" */
+  color: rgb(107 114 128);
+  font-weight: 300;
+  margin-top: 2rem;
 }
 
 .highlight {
   /* "text-red-500 dark:text-gray-50" */
+  color: red;
+  font-weight: 500;
 }
 
+/* .input {
+  background: transparent;
+  border-bottom-width: 1px;
+  padding-top: 0.5rem; 
+  padding-bottom: 0.5rem; 
+  padding-left: 1rem;
+  outline: none;
+} */
+
 .input {
-  /* "bg-transparent border-b py-2 pl-4 focus:outline-none focus:rounded-md focus:ring-1 ring-green-500 font-light text-gray-500" */
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 3px solid #ccc;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+}
+
+.input:focus {
+  border: 3px solid rgb(75, 74, 74);
 }
 
 .button_container {
   /* "flex flex-row items-center justify-start" */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .button {
   /* "px-10 mt-8 py-2 bg-[#130F49] text-gray-50 font-light rounded-md text-lg flex flex-row items-center" */
+  margin-top: 2rem;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  background-color: #130f49;
+  /* color: rgb(107 114 128); */
+  color: white;
+  font-weight: 300;
+  border-radius: 6px;
+  font-size: large;
+  display: flex;
+  align-items: center;
 }
