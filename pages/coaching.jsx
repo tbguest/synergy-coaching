@@ -4,11 +4,10 @@ import Image from "next/image";
 export default function Coaching() {
   return (
     <div className={styles.container}>
-      <div className={styles.image_header}>
-        <h1>Coaching</h1>
-      </div>
+      <div className={styles.image_header}></div>
       <div className={styles.content}>
-        {/* <h1>Coaching</h1> */}
+        <h1>Coaching</h1>
+        <hr className={styles.hr} />
         <p>
           Coaching occurs through transformative conversation that inspires you
           to live a meaningful life and embrace your potential.

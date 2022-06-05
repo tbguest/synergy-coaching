@@ -24,6 +24,10 @@
   background-color: var(--color-primary-hover);
 }
 
+.nav_brand h1 {
+  line-height: 2.5rem;
+}
+
 .nav_brand {
   font-size: large;
   font-family: "Playfair Display";

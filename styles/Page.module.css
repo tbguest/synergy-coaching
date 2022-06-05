@@ -21,19 +21,32 @@
 
 .content {
   position: relative;
-  top: var(--nav-height);
   left: 50%;
   transform: translateX(-50%);
   max-width: var(--content-max-width);
-  /* background-color: rgb(255, 255, 255, 0.65); */
   border-radius: var(--border-radius);
   padding: 2rem;
-  padding-bottom: var(--footer-height);
-  margin-bottom: 10rem;
+  margin-bottom: 3rem;
+}
+
+.content h1 {
+  font-size: 2.5rem;
+  text-align: center;
 }
 
 .portrait_image_wrapper {
-  max-width: 300px;
-  max-height: 400px;
   margin-bottom: 6rem;
+  margin-top: 3rem;
+  width: 100%;
+}
+
+.hr {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 1px;
+  border: 0;
+  border-top: 2px solid #ccc;
+  margin: 3rem auto 3rem auto;
+  width: 5rem;
 }

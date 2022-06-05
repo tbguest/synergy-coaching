@@ -4,19 +4,14 @@ import Image from "next/image";
 export default function Retreats() {
   return (
     <div className={styles.container}>
-      <div className={styles.image_header}>
+      <div className={styles.image_header}></div>
+      <div className={styles.content}>
+        <h1>Wellness Retreats</h1>
+        <hr className={styles.hr} />
         <div className={styles.header_text}>
-          <h1>Wellness Retreats</h1>
           <h2>{"Women Physicians' Wellness Retreat"}</h2>
           <h3>{"July 22-24, 2022"}</h3>
         </div>
-      </div>
-      {/* <div className={styles.header_text}>
-        <h1>Wellness Retreats</h1>
-        <h2>{"Women Physicians' Wellness Retreat"}</h2>
-        <h3>{"July 22-24, 2022"}</h3>
-      </div> */}
-      <div className={styles.content}>
         <p>
           Join Zenovia for an intimate gathering of women physicians who want to
           nourish their bodies, minds and spirits at Wild Ocean Lodge.
@@ -68,11 +63,12 @@ export default function Retreats() {
 
         <p>All prices include HST.</p>
 
-        <p>Wild Ocean Lodge:</p>
-        <p>Forestview room (king size bed): $665.25 single occupancy</p>
-        <p>Oceanview room (queen size bed): $665.25 single occupancy</p>
-        <p>Rustic Cabin (queen size bed): $521.50 single occupancy</p>
-
+        <strong>Wild Ocean Lodge:</strong>
+        <ul>
+          <li>Forestview room (king size bed): $665.25 single occupancy</li>
+          <li>Oceanview room (queen size bed): $665.25 single occupancy</li>
+          <li>Rustic Cabin (queen size bed): $521.50 single occupancy</li>
+        </ul>
         <p>
           People staying at the Wild Ocean Lodge site will share a bathroom,
           living room and kitchen on the main floor of the lodge.
@@ -82,27 +78,33 @@ export default function Retreats() {
           Accommodations are also available on site at the Sail Loft Yoga Studio
           (5 minute walk):
         </p>
-        <p>
-          Boathouse Apartment (queen size bed): $809.00 single occupancy.
-          Private bathroom, living room and kitchen.
-        </p>
+        <ul>
+          <li>
+            Boathouse Apartment (queen size bed): $809.00 single occupancy.
+            Private bathroom, living room and kitchen.
+          </li>
+        </ul>
 
         <p>
           If you would like to share a room with a friend, the following
           accommodations are available:
         </p>
-        <p>Wild Ocean Lodge:</p>
-        <p>
-          Forestview room (king size bed or 2 twin size beds): $550.25 per
-          person
-        </p>
-        <p>Rustic Cabin( 2 queen size beds): $478.38 per person</p>
+        <strong>Wild Ocean Lodge:</strong>
+        <ul>
+          <li>
+            Forestview room (king size bed or 2 twin size beds): $550.25 per
+            person
+          </li>
+          <li>Rustic Cabin( 2 queen size beds): $478.38 per person</li>
+        </ul>
 
-        <p>Sail Loft Yoga Studio:</p>
-        <p>
-          Boathouse Apartment (queen size bed and queen size mattress): $593.38
-          per person
-        </p>
+        <strong>Sail Loft Yoga Studio:</strong>
+        <ul>
+          <li>
+            Boathouse Apartment (queen size bed and queen size mattress):
+            $593.38 per person
+          </li>
+        </ul>
 
         {/* </Event> */}
       </div>

@@ -25,14 +25,19 @@
 }
 
 .contact_refer {
-  /* max-width: calc(1.2 * var(--content-max-width)); */
-  background-color: var(--color-secondary);
+  max-width: 95%;
+  /* background-color: var(--color-secondary); */
   position: relative;
-  /* left: 50%; */
-  /* transform: translateX(-50%); */
-  width: 100%;
   padding: 3rem;
-  /* margin: 3rem 0 3rem 0; */
+  box-shadow: 0 8px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@media (min-width: 768px) {
+  .contact_refer {
+    max-width: calc(1.5 * var(--content-max-width));
+  }
 }
 
 .contact_button {

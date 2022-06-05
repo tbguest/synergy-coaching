@@ -19,6 +19,14 @@ a {
   box-sizing: border-box;
 }
 
+h1 {
+  line-height: 3rem;
+}
+
+h2 {
+  line-height: 2rem;
+}
+
 :root {
   --nav-height: 7rem;
   --content-max-width: 46rem;

@@ -16,8 +16,7 @@ export default function Home() {
             reprehenderit. Minim nostrud non elit non cillum labore. Laboris
             nulla pariatur amet ex. Excepteur duis quis occaecat cillum.
           </p>
-          <p>Call to action</p>
-          <p>Refer to contact page</p>
+          <p>Call to action?</p>
         </div>
       </div>
       <div className={styles.contact_refer}>
