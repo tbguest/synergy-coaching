@@ -1,8 +1,17 @@
+import { useState } from "react";
 import styles from "./Navbar.module.css";
 import Link from "next/link";
 import { FiMenu } from "react-icons/fi";
+import { FiX } from "react-icons/fi";
+import { NavMenu } from "./NavMenu";
 
 const Navbar = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const handleMenuClick = () => {
+    setMenuOpen(!menuOpen);
+  };
+
   return (
     <nav className={styles.nav_container}>
       <Link href={"/"}>
@@ -22,7 +31,22 @@ const Navbar = () => {
       <Link href={"/contact"}>
         <a className={styles.nav_link}>Contact</a>
       </Link>
-      <FiMenu className={styles.burger} />
+      {menuOpen ? (
+        <button
+          className={styles.burger_button}
+          onClick={() => setMenuOpen(!menuOpen)}
+        >
+          <FiX className={styles.burger} />
+        </button>
+      ) : (
+        <button
+          className={styles.burger_button}
+          onClick={() => setMenuOpen(!menuOpen)}
+        >
+          <FiMenu className={styles.burger} />
+        </button>
+      )}
+      {menuOpen && <NavMenu onClick={handleMenuClick} />}
     </nav>
   );
 };

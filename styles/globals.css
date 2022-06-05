@@ -35,4 +35,6 @@ h2 {
   --color-primary-hover: #5093c9;
   --color-secondary: #ffeccb;
   --border-radius: 4px;
+  --grey: #363636;
+  --grey-hover: #464646;
 }
