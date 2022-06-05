@@ -5,19 +5,17 @@ export default function Retreats() {
   return (
     <div className={styles.container}>
       <div className={styles.image_header}>
-        <Image
-          width={3641}
-          height={1303}
-          src={"/meadow_cropped.jpg"}
-          alt={"View from a green hill overlooking the sea"}
-          className={styles.image}
-        />
+        <div className={styles.header_text}>
+          <h1>Wellness Retreats</h1>
+          <h2>{"Women Physicians' Wellness Retreat"}</h2>
+          <h3>{"July 22-24, 2022"}</h3>
+        </div>
       </div>
-      <div className={styles.header_text}>
+      {/* <div className={styles.header_text}>
         <h1>Wellness Retreats</h1>
         <h2>{"Women Physicians' Wellness Retreat"}</h2>
         <h3>{"July 22-24, 2022"}</h3>
-      </div>
+      </div> */}
       <div className={styles.content}>
         <p>
           Join Zenovia for an intimate gathering of women physicians who want to

@@ -28,7 +28,7 @@
   border: none;
   font-size: x-large;
   font-family: "Playfair Display", serif;
-  border-radius: 5px;
+  border-radius: var(--border-radius);
   padding: 1rem;
   max-width: 14rem;
   margin-left: 20%;

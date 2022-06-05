@@ -1,12 +1,14 @@
-import Head from "next/head";
-import styles from "../styles/Home.module.css";
+import styles from "../styles/Page.module.css";
 import Image from "next/image";
 
 export default function Coaching() {
   return (
-    <div className={styles.coaching_container}>
-      <>
-        <h1>Synergy Coaching and Wellness</h1>
+    <div className={styles.container}>
+      <div className={styles.image_header}>
+        <h1>Coaching</h1>
+      </div>
+      <div className={styles.content}>
+        {/* <h1>Coaching</h1> */}
         <p>
           Coaching occurs through transformative conversation that inspires you
           to live a meaningful life and embrace your potential.
@@ -28,14 +30,16 @@ export default function Coaching() {
           Integrating these aspects of yourself generates synergy, empowering
           your transformation so you can create the life you want.
         </p>
-        <Image
-          width={960}
-          height={1280}
-          src={"/rocks.jpg"}
-          alt={"Stacked rocks beside the ocean"}
-          className={styles.image}
-        />
-      </>
+        <div className={styles.portrait_image_wrapper}>
+          <Image
+            width={960}
+            height={1280}
+            src={"/rocks.jpg"}
+            alt={"Stacked rocks beside the ocean"}
+            className={styles.image}
+          />
+        </div>
+      </div>
     </div>
   );
 }

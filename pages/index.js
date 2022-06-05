@@ -19,7 +19,9 @@ export default function Home() {
           <p>Call to action</p>
           <p>Refer to contact page</p>
         </div>
-        <div className={styles.contact_refer}>
+      </div>
+      <div className={styles.contact_refer}>
+        <div className={styles.contact_refer_content}>
           <h3>
             Reserve a spot, or ask a question. I&apos;d love to hear from you.
           </h3>

@@ -2,7 +2,7 @@
   position: absolute;
   width: 100%;
   height: var(--nav-height);
-  background-color: steelblue;
+  background-color: var(--color-primary);
   /* background-color: #354259; */
   display: flex;
   justify-content: flex-end;
@@ -21,7 +21,7 @@
 }
 
 .nav_link:hover {
-  /* background-color: aliceblue; */
+  background-color: var(--color-primary-hover);
 }
 
 .nav_brand {
@@ -43,8 +43,10 @@
   }
 
   .nav_link {
-    margin: 2rem;
+    margin: 1rem;
     display: inline;
+    padding: 1rem;
+    border-radius: var(--border-radius);
   }
 }
 
