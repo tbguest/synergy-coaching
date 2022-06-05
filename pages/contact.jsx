@@ -1,10 +1,11 @@
 import styles from "../styles/Page.module.css";
 import { ContactForm } from "../components/ContactForm";
+import classNames from "classnames";
 
 export default function Contact() {
   return (
     <div className={styles.container}>
-      <div className={styles.image_header}></div>
+      <div className={styles.image_header_beach}></div>
       <div className={styles.content}>
         <h1>Contact</h1>
         <hr className={styles.hr} />

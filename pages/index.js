@@ -9,14 +9,19 @@ export default function Home() {
       <div className={styles.content_container}>
         <div className={styles.welcome_content}>
           <h1>Welcome</h1>
+          <hr className={styles.hr} />
           <p>
-            In aute eiusmod duis ea mollit amet excepteur magna. Quis amet
-            consequat veniam officia elit. Dolor nisi incididunt mollit Lorem.
-            Minim duis id aliqua sit ipsum do ea et in sunt deserunt
-            reprehenderit. Minim nostrud non elit non cillum labore. Laboris
-            nulla pariatur amet ex. Excepteur duis quis occaecat cillum.
+            Life is a journey. You can travel with this journey with energy,
+            passion and confidence that you are on the right path.
           </p>
-          <p>Call to action?</p>
+
+          <p>
+            {
+              "Synergy Coaching and Wellness provides services to help the traveller who needs time and space to revitalize, align their compass, discover inner resources and create momentum to enjoy life's journey."
+            }
+          </p>
+
+          <p>This is an invitation to explore Synergy.</p>
         </div>
       </div>
       <div className={styles.contact_refer}>
