@@ -1,6 +1,5 @@
 import styles from "../styles/Page.module.css";
 import { ContactForm } from "../components/ContactForm";
-import classNames from "classnames";
 
 export default function Contact() {
   return (
