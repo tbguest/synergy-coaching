@@ -64,10 +64,13 @@
   text-align: center;
 }
 
-.portrait_image_wrapper {
+.content_image {
   margin-bottom: 6rem;
   margin-top: 3rem;
   width: 100%;
+}
+
+.content_text {
 }
 
 .hr {
