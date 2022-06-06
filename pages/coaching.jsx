@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function Coaching() {
   return (
     <div className={styles.container}>
-      <div className={styles.image_header}></div>
+      <div className={styles.image_header_surf}></div>
       <div className={styles.content}>
         <h1>Coaching</h1>
         <hr className={styles.hr} />
