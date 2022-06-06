@@ -36,6 +36,7 @@ p {
 :root {
   --nav-height: 7rem;
   --content-max-width: 46rem;
+  --content-max-width-twocolumn: 64rem;
   --footer-height: 7rem;
   --color-primary: rgb(70, 130, 180);
   /* --color-primary: rgb(241, 221, 182); */

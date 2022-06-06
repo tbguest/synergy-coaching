@@ -6,13 +6,16 @@ export default function Coaching() {
     <div className={styles.container}>
       <div className={styles.image_header_surf}></div>
       <div className={styles.content}>
-        <div className={styles.content_text}>
+        {/* <div className={styles.content_title}>
           <h1>Coaching</h1>
           <hr className={styles.hr} />
-          <p>
-            Coaching occurs through transformative conversation that inspires
-            you to live a meaningful life and embrace your potential.
-          </p>
+        </div> */}
+        <div className={styles.content_text}>
+          <div className={styles.content_title}>
+            <h1>Coaching</h1>
+            <hr className={styles.hr} />
+          </div>
+
           <p>
             I am committed to being fully present and having impactful
             converations with you.
@@ -40,6 +43,10 @@ export default function Coaching() {
             alt={"Stacked rocks beside the ocean"}
             className={styles.image}
           />
+          <em>
+            Coaching occurs through transformative conversation that inspires
+            you to live a meaningful life and embrace your potential.
+          </em>
         </div>
       </div>
     </div>
