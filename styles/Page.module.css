@@ -7,7 +7,7 @@
 .image_header {
   position: relative;
   width: 100;
-  height: 25rem;
+  height: var(--img-header-height);
   background-image: url("/meadow_cropped_narrow.jpg");
   background-size: cover;
   bottom: 0;
@@ -22,7 +22,7 @@
 .image_header_beach {
   position: relative;
   width: 100;
-  height: 25rem;
+  height: var(--img-header-height);
   background-image: url("/beach_cropped.jpg");
   background-size: cover;
   bottom: 0;
@@ -37,7 +37,7 @@
 .image_header_surf {
   position: relative;
   width: 100;
-  height: 25rem;
+  height: var(--img-header-height);
   background-image: url("/surf_cropped.jpg");
   background-size: cover;
   bottom: 0;
