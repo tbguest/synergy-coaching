@@ -6,7 +6,7 @@
 
 .image_header {
   position: relative;
-  width: 100;
+  width: 100%;
   height: var(--img-header-height);
   background-image: url("/meadow_cropped_narrow.jpg");
   background-size: cover;
@@ -36,7 +36,7 @@
 
 .image_header_surf {
   position: relative;
-  width: 100;
+  width: 100%;
   height: var(--img-header-height);
   background-image: url("/surf_cropped.jpg");
   background-size: cover;
