@@ -28,8 +28,14 @@ const Navbar = () => {
       <Link href={"/coaching"}>
         <a className={styles.nav_link}>Coaching</a>
       </Link>
+      <Link href={"/about"}>
+        <a className={styles.nav_link}>About</a>
+      </Link>
       <Link href={"/retreats"}>
         <a className={styles.nav_link}>Wellness Retreats</a>
+      </Link>
+      <Link href={"/accommodations"}>
+        <a className={styles.nav_link}>Accommodations</a>
       </Link>
       <Link href={"/contact"}>
         <a className={styles.nav_link}>Contact</a>

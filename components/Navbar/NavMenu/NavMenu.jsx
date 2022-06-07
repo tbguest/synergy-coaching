@@ -34,9 +34,23 @@ const NavMenu = ({ onClick }) => {
         </Link>
       </li>
       <li>
+        <Link href={"/about"}>
+          <a className={styles.nav_link} onClick={onClick}>
+            About
+          </a>
+        </Link>
+      </li>
+      <li>
         <Link href={"/retreats"}>
           <a className={styles.nav_link} onClick={onClick}>
             Wellness Retreats
+          </a>
+        </Link>
+      </li>
+      <li>
+        <Link href={"/accommodations"}>
+          <a className={styles.nav_link} onClick={onClick}>
+            Accommodations
           </a>
         </Link>
       </li>

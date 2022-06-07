@@ -10,7 +10,7 @@
   padding: 1.5rem;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1600px) {
   .container {
     display: none;
   }
