@@ -5,12 +5,16 @@ export default function Retreats() {
   return (
     <div className={styles.container}>
       <div className={styles.image_header}></div>
+      <div className={styles.content_title}>
+        <h1>Wellness Retreats</h1>
+        <hr className={styles.hr} />
+      </div>
       <div className={styles.content}>
         <div className={styles.content_text}>
-          <div className={styles.content_title}>
+          {/* <div className={styles.content_title}>
             <h1>Wellness Retreats</h1>
             <hr className={styles.hr} />
-          </div>
+          </div> */}
           <div className={styles.header_text}>
             <h2>{"Women Physicians' Wellness Retreat"}</h2>
             <h3>{"July 22-24, 2022"}</h3>
@@ -108,8 +112,6 @@ export default function Retreats() {
               $593.38 per person
             </li>
           </ul>
-
-          {/* </Event> */}
         </div>
         <div className={styles.content_image}>
           <Image

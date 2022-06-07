@@ -5,16 +5,20 @@ export default function Coaching() {
   return (
     <div className={styles.container}>
       <div className={styles.image_header_surf}></div>
+      <div className={styles.content_title}>
+        <h1>Coaching</h1>
+        <hr className={styles.hr} />
+      </div>
       <div className={styles.content}>
         {/* <div className={styles.content_title}>
           <h1>Coaching</h1>
           <hr className={styles.hr} />
         </div> */}
         <div className={styles.content_text}>
-          <div className={styles.content_title}>
+          {/* <div className={styles.content_title}>
             <h1>Coaching</h1>
             <hr className={styles.hr} />
-          </div>
+          </div> */}
 
           <p>
             I am committed to being fully present and having impactful
