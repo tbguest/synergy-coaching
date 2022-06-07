@@ -33,6 +33,10 @@ p {
   font-size: 1.2rem;
 }
 
+button {
+  font-family: "Tiro Devanagari Marathi", serif;
+}
+
 :root {
   --nav-height: 7rem;
   --content-max-width: 46rem;

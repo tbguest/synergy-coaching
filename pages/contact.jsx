@@ -8,11 +8,9 @@ export default function Contact() {
       <div className={styles.content_title}>
         <h1>Contact</h1>
         <hr className={styles.hr} />
-      </div>
-      <div className={styles.content}>
-        {/* <h1>Contact</h1>
-        <hr className={styles.hr} /> */}
-        <p>Book a spot now, or reach out with any questions.</p>
+        <span className={styles.center}>
+          <p>Book a spot now, or reach out with any questions.</p>
+        </span>
       </div>
       <ContactForm />
     </div>
