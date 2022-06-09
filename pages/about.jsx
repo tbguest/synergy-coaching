@@ -1,5 +1,6 @@
 import styles from "../styles/Page.module.css";
 import Image from "next/image";
+import { ContactButton } from "../components/ContactButton";
 
 export default function About() {
   return (
@@ -21,6 +22,16 @@ export default function About() {
             veniam aliqua veniam est ut. Mollit minim exercitation in ipsum
             pariatur nulla elit eiusmod id reprehenderit ipsum culpa.
           </p>
+          <ContactButton
+            style={{
+              display: "block",
+              "margin-left": "auto",
+              "margin-right": "auto",
+              "margin-top": "3rem",
+            }}
+          >
+            Reach out
+          </ContactButton>
         </div>
         <div className={styles.content_image}>
           <Image

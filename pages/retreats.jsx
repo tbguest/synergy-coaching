@@ -1,5 +1,6 @@
 import styles from "../styles/Page.module.css";
 import Image from "next/image";
+import { ContactButton } from "../components/ContactButton";
 
 export default function Retreats() {
   return (
@@ -11,10 +12,6 @@ export default function Retreats() {
       </div>
       <div className={styles.content}>
         <div className={styles.content_text}>
-          {/* <div className={styles.content_title}>
-            <h1>Wellness Retreats</h1>
-            <hr className={styles.hr} />
-          </div> */}
           <div className={styles.header_text}>
             <h2>{"Women Physicians' Wellness Retreat"}</h2>
             <h3>{"July 22-24, 2022"}</h3>
@@ -89,6 +86,16 @@ export default function Retreats() {
               $593.38 per person
             </li>
           </ul>
+          <ContactButton
+            style={{
+              display: "block",
+              "margin-left": "auto",
+              "margin-right": "auto",
+              "margin-top": "3rem",
+            }}
+          >
+            Book now
+          </ContactButton>
         </div>
         <div className={styles.content_image}>
           <Image
@@ -98,8 +105,6 @@ export default function Retreats() {
             alt={"Butterfly atop a flower"}
             className={styles.image}
           />
-          {/* <h2>{"Women Physicians' Wellness Retreat at Wild Ocean Lodge"}</h2>
-          <h3>July 22-24, 2022</h3> */}
           <em>
             {
               "Wild Ocean Lodge is 45 minutes from Halifax on the Aspotogan Peninsula. It is a small acreage embraced by forest on the west, overlooking St. Margaret's Bay to the east. "

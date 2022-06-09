@@ -1,0 +1,14 @@
+.contact_button {
+  background-color: var(--font-color-primary);
+  border: none;
+  color: white;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: var(--border-radius);
+  font-size: large;
+  position: relative;
+}
+
+.contact_button:hover {
+  cursor: pointer;
+}

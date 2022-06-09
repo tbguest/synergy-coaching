@@ -1,5 +1,6 @@
 import styles from "../styles/Page.module.css";
 import Image from "next/image";
+import { ContactButton } from "../components/ContactButton";
 
 export default function Accommodations() {
   return (
@@ -19,6 +20,16 @@ export default function Accommodations() {
             mollit eiusmod Lorem veniam aute cillum voluptate eiusmod velit. Id
             consequat culpa consectetur irure ipsum id.
           </p>
+          <ContactButton
+            style={{
+              display: "block",
+              "margin-left": "auto",
+              "margin-right": "auto",
+              "margin-top": "3rem",
+            }}
+          >
+            Book now
+          </ContactButton>
         </div>
         <div className={styles.content_image}>
           <Image

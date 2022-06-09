@@ -1,5 +1,6 @@
 import styles from "../styles/Page.module.css";
 import Image from "next/image";
+import { ContactButton } from "../components/ContactButton";
 
 export default function Coaching() {
   return (
@@ -10,16 +11,7 @@ export default function Coaching() {
         <hr className={styles.hr} />
       </div>
       <div className={styles.content}>
-        {/* <div className={styles.content_title}>
-          <h1>Coaching</h1>
-          <hr className={styles.hr} />
-        </div> */}
         <div className={styles.content_text}>
-          {/* <div className={styles.content_title}>
-            <h1>Coaching</h1>
-            <hr className={styles.hr} />
-          </div> */}
-
           <em className={styles.italics}>
             Coaching occurs through transformative conversation that inspires
             you to live a meaningful life and embrace your potential.
@@ -42,6 +34,16 @@ export default function Coaching() {
             Integrating these aspects of yourself generates synergy, empowering
             your transformation so you can create the life you want.
           </p>
+          <ContactButton
+            style={{
+              display: "block",
+              "margin-left": "auto",
+              "margin-right": "auto",
+              "margin-top": "3rem",
+            }}
+          >
+            Learn more
+          </ContactButton>
         </div>
         <div className={styles.content_image}>
           <Image
@@ -51,10 +53,6 @@ export default function Coaching() {
             alt={"Stacked rocks beside the ocean"}
             className={styles.image}
           />
-          {/* <em>
-            Coaching occurs through transformative conversation that inspires
-            you to live a meaningful life and embrace your potential.
-          </em> */}
         </div>
       </div>
     </div>
