@@ -20,6 +20,10 @@ export default function Coaching() {
             <hr className={styles.hr} />
           </div> */}
 
+          <em className={styles.italics}>
+            Coaching occurs through transformative conversation that inspires
+            you to live a meaningful life and embrace your potential.
+          </em>
           <p>
             I am committed to being fully present and having impactful
             converations with you.
@@ -47,10 +51,10 @@ export default function Coaching() {
             alt={"Stacked rocks beside the ocean"}
             className={styles.image}
           />
-          <em>
+          {/* <em>
             Coaching occurs through transformative conversation that inspires
             you to live a meaningful life and embrace your potential.
-          </em>
+          </em> */}
         </div>
       </div>
     </div>

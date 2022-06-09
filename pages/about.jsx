@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function About() {
   return (
     <div className={styles.container}>
-      <div className={styles.image_header_surf}></div>
+      <div className={styles.image_header_longboard}></div>
       <div className={styles.content_title}>
         <h1>About Me</h1>
         <hr className={styles.hr} />
@@ -26,8 +26,8 @@ export default function About() {
           <Image
             width={960}
             height={1280}
-            src={"/rocks.jpg"}
-            alt={"Stacked rocks beside the ocean"}
+            src={"/tree.jpg"}
+            alt={"Tree with light shining from behind"}
             className={styles.image}
           />
           <em>

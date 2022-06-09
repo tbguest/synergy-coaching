@@ -8,15 +8,11 @@ export default function Home() {
       <Splash />
       <div className={styles.content_container}>
         <div className={styles.welcome_content}>
-          <h1>
-            “When the basis for your actions is inner alignment with the present
-            moment, your actions become empowered by the intelligence of life
-            itself.” <br></br>—&nbsp;Eckhart Tolle
-          </h1>
+          <h1>Life is a journey.</h1>
           <hr className={styles.hr} />
           <p>
-            Life is a journey. You can travel with this journey with energy,
-            passion and confidence that you are on the right path.
+            You can travel this journey with energy, passion and confidence that
+            you are on the right path.
           </p>
 
           <p>

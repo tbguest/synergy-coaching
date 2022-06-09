@@ -17,8 +17,8 @@ const Navbar = () => {
       <Link href={"/"}>
         <a className={styles.nav_brand}>
           <h1>
-            <span className={styles.stylyzed_header}>Synergy</span> Coaching
-            and&nbsp;Wellness
+            <span className={styles.stylyzed_header}>Synergy</span>{" "}
+            Coaching&nbsp;and&nbsp;Retreats
           </h1>
         </a>
       </Link>

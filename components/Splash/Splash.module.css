@@ -3,7 +3,7 @@
   width: 100;
   top: var(--nav-height);
   height: calc(100vh - var(--nav-height));
-  background-image: url("/wave_cropped2.jpg");
+  background-image: url("/wave_cropped.jpg");
   background-size: cover;
   bottom: 0;
   margin: 0;
