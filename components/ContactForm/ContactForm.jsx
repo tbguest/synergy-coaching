@@ -8,6 +8,13 @@ const ContactForm = ({ children }) => {
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
 
+  const handleFormStateReset = () => {
+    setFullname("");
+    setEmail("");
+    setSubject("");
+    setMessage("");
+  };
+
   //   Form validation state
   const [errors, setErrors] = useState({});
 
@@ -140,7 +147,9 @@ const ContactForm = ({ children }) => {
           }}
         ></textarea>
         <div className={styles.button_container}>
-          <button className={styles.button}>{buttonText}</button>
+          <button className={styles.button} onClick={handleFormStateReset}>
+            {buttonText}
+          </button>
         </div>
         {showSuccessMessage ? (
           <p>Email sent!</p>

@@ -9,7 +9,7 @@ async function sendEmail(req, res) {
       to: process.env.TO_EMAIL_ADDRESS, // Your email where you'll receive emails
       from: process.env.FROM_EMAIL_ADDRESS, // your website email address here
       replyTo: `${req.body.email}`,
-      subject: `SYNERGY COACHING: ${req.body.subject}`,
+      subject: `WILD OCEAN COACHING: ${req.body.subject}`,
       html: `<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
       <html lang="en">
       <head>
@@ -28,7 +28,7 @@ async function sendEmail(req, res) {
         <div class="img-container" style="display: flex;justify-content: center;align-items: center;border-radius: 5px;overflow: hidden; font-family: 'helvetica', 'ui-sans';">              
               </div>
               <div class="container" style="margin-left: 20px;margin-right: 20px;">
-              <h3>New mail sent via Synergy Coaching</h3>
+              <h3>New mail sent via Wild Ocean Coaching</h3>
               <div style="font-size: 16px;">
               <p>From: ${req.body.fullname}</p>
               <p>Email: ${req.body.email}</p>
