@@ -12,48 +12,67 @@ export default function Coaching() {
       </div>
       <div className={styles.content}>
         <div className={styles.content_text}>
-          <em className={styles.italics}>
-            Coaching occurs through transformative conversation that inspires
-            you to live a meaningful life and embrace your potential.
-          </em>
+          <p>
+            The{" "}
+            <a
+              href={
+                "https://experiencecoaching.com/?utm_source=ICF&amp%3Butm_medium=direct-link&amp%3Butm_campaign=icf-to-ec"
+              }
+              target="_blank"
+              rel="noreferrer"
+            >
+              International Coaching Federation
+            </a>{" "}
+            defines coaching as partnering with people in a thought-provoking
+            and creative process that inspires them to maximize their personal
+            and professional potential.
+          </p>
+          <p>
+            The coach is the expert in the coaching process, and you are the
+            expert in your own life&apos;s journey.
+          </p>
           <p>
             I am committed to being fully present and having impactful
-            converations with you.
+            conversations with you.
           </p>
           <p>
             When you meet my intentions with your own intentions, our
-            coversation will harness the synergy between us to create momentum
-            in your life.
+            conversation will generate momentum in your life.
           </p>
           <p>
-            You will envision your highest aspirations, enhance your
-            self-awareness, discover sources for resiliency and strength, align
-            with your deepest values, and gain perspectives that liberate you.
+            Through coaching conversations, you will find clarity about your
+            priorities, enhance your self- awareness, discover sources for
+            resiliency and strength, align with your deepest values, and gain
+            perspectives that liberate you.
           </p>
           <p>
-            Integrating these aspects of yourself generates synergy, empowering
-            your transformation so you can create the life you want.
+            I invite you to fully commit to yourself and discover how coaching
+            will empower you to create the life you want.
           </p>
-          <ContactButton
-            style={{
-              display: "block",
-              "margin-left": "auto",
-              "margin-right": "auto",
-              "margin-top": "3rem",
-            }}
-          >
-            Learn more
-          </ContactButton>
         </div>
         <div className={styles.content_image}>
           <Image
-            width={960}
-            height={1280}
+            width={3015}
+            height={3472}
             src={"/rocks.jpg"}
             alt={"Stacked rocks beside the ocean"}
             className={styles.image}
           />
+          <em className={styles.italics}>
+            Coaching occurs through transformative conversation that inspires
+            you to live a meaningful life and embrace your potential.
+          </em>
         </div>
+        <ContactButton
+          style={{
+            display: "block",
+            "margin-left": "auto",
+            "margin-right": "auto",
+            "margin-top": "1rem",
+          }}
+        >
+          Learn more
+        </ContactButton>
       </div>
     </div>
   );

@@ -5,7 +5,7 @@ import { ContactButton } from "../components/ContactButton";
 export default function Accommodations() {
   return (
     <div className={styles.container}>
-      <div className={styles.image_header_surf}></div>
+      <div className={styles.image_header_rental}></div>
       <div className={styles.content_title}>
         <h1>Accommodations</h1>
         <hr className={styles.hr} />
@@ -13,37 +13,86 @@ export default function Accommodations() {
       <div className={styles.content}>
         <div className={styles.content_text}>
           <p>
-            Aliquip qui duis adipisicing irure occaecat non mollit consectetur
-            minim qui anim. Ad nulla occaecat culpa elit cillum consequat.
-            Ullamco magna elit anim cupidatat veniam labore. Adipisicing
-            adipisicing deserunt nisi velit culpa officia qui sunt. Qui tempor
-            mollit eiusmod Lorem veniam aute cillum voluptate eiusmod velit. Id
-            consequat culpa consectetur irure ipsum id.
+            Wild Ocean Lodge is situated on a small acreage on the Aspotogan
+            Peninsula, overlooking St. Margarets Bay to the east and embraced by
+            forest on the west. This setting is perfect for people who enjoy the
+            tranquillity of being in nature and want access to outdoor
+            adventure. It is available for vacation rentals or small-scale
+            retreats. We are located 45 minutes from Halifax and 10 minutes from
+            Hubbards and its amenities.
           </p>
-          <ContactButton
-            style={{
-              display: "block",
-              "margin-left": "auto",
-              "margin-right": "auto",
-              "margin-top": "3rem",
-            }}
-          >
-            Book now
-          </ContactButton>
+          <p>
+            There is a newly renovated timber frame guesthouse with two
+            bedrooms, one bathroom with shower, dining area, living room and a
+            well-stocked kitchen. The back deck has a BBQ and outdoor shower.{" "}
+          </p>
+          <p>
+            While staying at Wild Ocean Lodge, you are welcome to explore the
+            gardens, rest in a hammock in the tree house, catch frogs by the
+            pond or hike the forest trails. We have excellent cycling on the
+            Aspotogan Coastal Route (2 bikes available) and we are a 10 minute
+            drive to Bayswater beach. Kayak and bike rentals are available at
+            our neighbors,{" "}
+            <a
+              href={"https://www.freewheeling.ca/equipment-rentals/"}
+              target="_blank"
+              rel="noreferrer"
+            >
+              Freewheeling Adventures
+            </a>
+            .
+          </p>
+          <p>
+            To see more photos or book a vacation rental please visit our
+            listing on{" "}
+            <a
+              href={"https://airbnb.com/h/wild-ocean-lodge-nova-scotia"}
+              target="_blank"
+              rel="noreferrer"
+            >
+              Airbnb
+            </a>
+            .
+          </p>
+          <p>
+            You can book Wild Ocean Lodge to host your own small-scale retreat
+            or workshop where food can be provided by Tyler Haut of{" "}
+            <a
+              href={"https://www.foodpeople.ca/pages/about-us"}
+              target="_blank"
+              rel="noreferrer"
+            >
+              Food People
+            </a>
+            . Enquire about using our facilities for a retreat below.
+          </p>
         </div>
         <div className={styles.content_image}>
           <Image
-            width={960}
-            height={1280}
-            src={"/rocks.jpg"}
-            alt={"Stacked rocks beside the ocean"}
+            width={1128}
+            height={1392}
+            src={"/cabin_summer.jpg"}
+            alt={"Rustic cabin on a snowy winter day"}
             className={styles.image}
           />
           <em>
-            Coaching occurs through transformative conversation that inspires
-            you to live a meaningful life and embrace your potential.
+            There is also a rustic cabin with two queen beds in the loft and a
+            living area on the main floor with a refrigerator and an electric
+            kettle. The cabin has no running water but drinking water is
+            available through a water crock. Bathroom access is available in the
+            main house, or in the guesthouse if you are renting both.
           </em>
         </div>
+        <ContactButton
+          style={{
+            display: "block",
+            "margin-left": "auto",
+            "margin-right": "auto",
+            "margin-top": "1rem",
+          }}
+        >
+          Book now
+        </ContactButton>
       </div>
     </div>
   );
