@@ -33,18 +33,16 @@
   font-family: "Playfair Display";
   position: absolute;
   left: 4%;
-  /* max-width: 70%; */
   line-height: 2rem;
-  font-size: 2rem;
   display: flex;
   justify-content: center;
   max-width: 15rem;
+  max-height: var(--nav-height);
 }
 
 .nav_brand h1 {
   font-weight: 400;
-  /* font-size: 2rem; */
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 .burger {
@@ -68,10 +66,16 @@
 }
 
 .stylyzed_header {
-  font-family: "Cinzel", serif;
+  font-family: "Cinzel Decorative", cursive;
   letter-spacing: 3px;
   font-weight: 600;
-  font-size: 2.3rem;
+  font-size: 2rem;
+}
+
+.stylyzed_subheader {
+  /* text-align: left; */
+  position: relative;
+  left: 0;
 }
 
 @media (min-width: 1300px) {
@@ -91,7 +95,7 @@
   }
 
   .stylyzed_header {
-    font-family: "Cinzel", serif;
+    font-family: "Cinzel Decorative", cursive;
     letter-spacing: 3px;
   }
 
@@ -103,9 +107,27 @@
 
 @media (min-width: 768px) {
   .nav_brand {
-    /* max-width: 50%; */
-    max-width: 15rem;
+    max-width: 18rem;
     display: flex;
-    /* text-align: center; */
   }
+
+  .stylyzed_header {
+    font-size: 2.3rem;
+  }
+
+  .nav_brand h1 {
+    font-size: 1.5rem;
+  }
+
+  .nav_brand_text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.nav_brand_text {
+  display: flex;
+  flex-direction: column;
 }

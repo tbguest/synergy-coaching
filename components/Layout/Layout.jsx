@@ -5,7 +5,7 @@ import styles from "./Layout.module.css";
 import Head from "next/head";
 
 const Layout = ({ children, documentHead }) => {
-  const title = `Synergy Coaching ${documentHead?.title ?? ""}`;
+  const title = `Wild Ocean Coaching ${documentHead?.title ?? ""}`;
   return (
     <>
       <Head>

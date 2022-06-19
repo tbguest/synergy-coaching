@@ -17,11 +17,11 @@ export default function Home() {
 
           <p>
             {
-              "Synergy Coaching and Wellness provides services to help the traveller who needs time and space to revitalize, align their compass, discover inner resources and create momentum to enjoy life's journey."
+              "Wild Ocean Coaching and Retreats provides services to help the traveller who needs time and space to revitalize, align their compass, discover inner resources and create momentum to enjoy life's journey."
             }
           </p>
 
-          <p>This is an invitation to explore Synergy.</p>
+          <p>This is an invitation to explore.</p>
         </div>
       </div>
       <div className={styles.contact_refer_content}>

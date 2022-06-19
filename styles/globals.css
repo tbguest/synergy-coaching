@@ -1,6 +1,7 @@
 /* @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&display=swap"); */
 @import url("https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Marathi:ital@0;1&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&display=swap");
 
 html,
 body {
@@ -13,6 +14,7 @@ body {
 
 a {
   color: inherit;
+  /* color: #0645ad; */
   text-decoration: none;
 }
 
@@ -51,4 +53,5 @@ button {
   --grey-hover: #464646;
   --font-color-primary: #464646;
   --img-header-height: 32rem;
+  --inset-text: 2rem;
 }
