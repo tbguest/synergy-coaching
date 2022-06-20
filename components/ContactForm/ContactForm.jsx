@@ -89,7 +89,10 @@ const ContactForm = ({ children }) => {
       setButtonText("Send");
     }
     console.log(fullname, email, subject, message);
+    handleFormStateReset();
   };
+
+  console.log("here");
 
   return (
     <>
@@ -147,9 +150,8 @@ const ContactForm = ({ children }) => {
           }}
         ></textarea>
         <div className={styles.button_container}>
-          <button className={styles.button} onClick={handleFormStateReset}>
-            {buttonText}
-          </button>
+          {/* <button className={styles.button} onClick={handleFormStateReset}> */}
+          <button className={styles.button}>{buttonText}</button>
         </div>
         {showSuccessMessage ? (
           <p>Email sent!</p>

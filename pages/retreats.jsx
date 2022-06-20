@@ -2,6 +2,7 @@ import styles from "../styles/Page.module.css";
 import Image from "next/image";
 import { ContactButton } from "../components/ContactButton";
 import Link from "next/link";
+import { GiCurledLeaf } from "react-icons/gi";
 
 export default function Retreats() {
   return (
@@ -84,6 +85,11 @@ export default function Retreats() {
             classes, meals, accommodations and HST. There are four
             accommodations to choose from, some can be shared with a friend.
           </p>
+          <span className={styles.pagebreak}>
+            <GiCurledLeaf className={styles.icons} />
+            <GiCurledLeaf className={styles.icons} />
+            <GiCurledLeaf className={styles.icons} />
+          </span>
         </div>
         <div className={styles.content_image}>
           <Image
@@ -141,7 +147,7 @@ export default function Retreats() {
             "margin-top": "1rem",
           }}
         >
-          Book now
+          Reach out
         </ContactButton>
       </div>
     </div>

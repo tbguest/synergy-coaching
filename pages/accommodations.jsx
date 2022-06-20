@@ -91,7 +91,7 @@ export default function Accommodations() {
             "margin-top": "1rem",
           }}
         >
-          Book now
+          Reach out
         </ContactButton>
       </div>
     </div>
