@@ -69,10 +69,10 @@ export default function Accommodations() {
         </div>
         <div className={styles.content_image}>
           <Image
-            width={1128}
-            height={1392}
-            src={"/cabin_summer.jpg"}
-            alt={"Rustic cabin on a snowy winter day"}
+            width={749}
+            height={998}
+            src={"/cabin_summer.png"}
+            alt={"Rustic cabin in a meadow on a green summer day"}
             className={styles.image}
           />
           <em>
