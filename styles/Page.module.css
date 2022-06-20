@@ -93,7 +93,8 @@
 @media (min-width: 768px) {
   .content {
     display: grid;
-    grid-template: auto 1fr / 1fr 40%;
+    /* grid-template: auto 1fr / 1fr 40%; */
+    grid-template: auto 1fr / 50% 50%;
     grid-gap: 16px 32px;
     margin-bottom: 5rem;
   }
@@ -169,4 +170,8 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+}
+
+.emphasis {
+  font-size: 1.4rem;
 }

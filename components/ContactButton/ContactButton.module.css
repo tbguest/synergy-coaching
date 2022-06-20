@@ -16,3 +16,7 @@
 .contact_button:hover {
   cursor: pointer;
 }
+
+.nav_link {
+  color: white;
+}

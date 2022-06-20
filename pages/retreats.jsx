@@ -23,14 +23,14 @@ export default function Retreats() {
             <Link href={"/accommodations"}>
               <a className={styles.nav_link}>Wild Ocean Lodge</a>
             </Link>
-            . Wild Ocean Lodge is an acreage on the Aspotogan Peninsula,
-            embraced by forest on the west, overlooking St. Margarets Bay to the
-            east.
+            . Wild Ocean Lodge is an acreage on the Aspotogan Peninsula, Nova
+            Scotia, embraced by forest on the west, overlooking St. Margarets
+            Bay to the east.
           </p>
 
           <p>
             The retreat includes small group work where we will engage in
-            supportive and transformative conversation and mind-body practices.
+            supportive and transformative conversations and mind-body practices.
             Each morning starts with a 45 minute yoga class with{" "}
             <a
               href={"https://sailloftyoga.com/SailLoftBio.html"}
@@ -79,6 +79,11 @@ export default function Retreats() {
             </a>{" "}
             (rentals not included in retreat fees).
           </p>
+          <p>
+            <strong>Retreat fees</strong> include the group workshops, yoga
+            classes, meals, accommodations and HST. There are four
+            accommodations to choose from, some can be shared with a friend.
+          </p>
         </div>
         <div className={styles.content_image}>
           <Image
@@ -88,18 +93,16 @@ export default function Retreats() {
             alt={"Butterfly atop a flower"}
             className={styles.image}
           />
-          <em>
-            <strong>Retreat fees</strong> include the group workshops, yoga
-            classes, meals, accommodations and HST. There are four
-            accommodations to choose from, some can be shared with a friend.
-          </em>
+          <p>
+            <strong className={styles.emphasis}>Accommodations</strong>
+          </p>
           <p>
             <Link href={"/accommodations"}>
               <a className={styles.nav_link}>
                 <strong>Wild Ocean Lodge</strong>
               </a>
-            </Link>
-            . (shared bathroom, living room and kitchen on the main floor of
+            </Link>{" "}
+            (shared bathroom, living room and kitchen on the main floor of
             lodge):
           </p>
           <ul>

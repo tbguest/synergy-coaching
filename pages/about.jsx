@@ -13,6 +13,13 @@ export default function About() {
       <div className={styles.content}>
         <div className={styles.content_text}>
           <h2>Zenovia Ursuliak MD, PhD, FRCPC</h2>
+          <Image
+            width={884}
+            height={1053}
+            src={"/zen_cropped.jpg"}
+            alt={"A headshot of the author"}
+            className={styles.image}
+          />
           <p>Vitality,</p>
           <p className={styles.inset1}>Connection,</p>
           <p className={styles.inset2}>Growth,</p>
@@ -20,8 +27,8 @@ export default function About() {
           <p className={styles.inset4}>Living in harmony with Nature</p>
           <p>are the values that guide my life.</p>
           <p>
-            My mission is to help people though realize their greatest potential
-            so collectively we can increase the vitality and well-being on this
+            My mission is to help people realize their greatest potential so
+            collectively we can increase the vitality and well-being on this
             planet.
           </p>
 

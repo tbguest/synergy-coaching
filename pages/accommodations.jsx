@@ -14,12 +14,12 @@ export default function Accommodations() {
         <div className={styles.content_text}>
           <p>
             Wild Ocean Lodge is situated on a small acreage on the Aspotogan
-            Peninsula, overlooking St. Margarets Bay to the east and embraced by
-            forest on the west. This setting is perfect for people who enjoy the
-            tranquillity of being in nature and want access to outdoor
-            adventure. It is available for vacation rentals or small-scale
-            retreats. We are located 45 minutes from Halifax and 10 minutes from
-            Hubbards and its amenities.
+            Peninsula, Nova Scotia, overlooking St. Margarets Bay to the east
+            and embraced by forest on the west. This setting is perfect for
+            people who enjoy the tranquillity of being in nature and want access
+            to outdoor adventure. It is available for vacation rentals or
+            small-scale retreats. We are located 45 minutes from Halifax and 10
+            minutes from Hubbards and its amenities.
           </p>
           <p>
             There is a newly renovated timber frame guesthouse with two
@@ -80,7 +80,7 @@ export default function Accommodations() {
             living area on the main floor with a refrigerator and an electric
             kettle. The cabin has no running water but drinking water is
             available through a water crock. Bathroom access is available in the
-            main house, or in the guesthouse if you are renting both.
+            main house, or in the guesthouse if you are renting it.
           </em>
         </div>
         <ContactButton
