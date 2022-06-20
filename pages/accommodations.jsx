@@ -37,6 +37,7 @@ export default function Accommodations() {
               href={"https://www.freewheeling.ca/equipment-rentals/"}
               target="_blank"
               rel="noreferrer"
+              className={styles.a}
             >
               Freewheeling Adventures
             </a>
@@ -49,6 +50,7 @@ export default function Accommodations() {
               href={"https://airbnb.com/h/wild-ocean-lodge-nova-scotia"}
               target="_blank"
               rel="noreferrer"
+              className={styles.a}
             >
               Airbnb
             </a>
@@ -61,6 +63,7 @@ export default function Accommodations() {
               href={"https://www.foodpeople.ca/pages/about-us"}
               target="_blank"
               rel="noreferrer"
+              className={styles.a}
             >
               Food People
             </a>

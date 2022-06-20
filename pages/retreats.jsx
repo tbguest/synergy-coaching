@@ -3,6 +3,7 @@ import Image from "next/image";
 import { ContactButton } from "../components/ContactButton";
 import Link from "next/link";
 import { GiCurledLeaf } from "react-icons/gi";
+import classNames from "classnames";
 
 export default function Retreats() {
   return (
@@ -22,7 +23,9 @@ export default function Retreats() {
             Join Zenovia for an intimate gathering of women physicians who want
             to nourish their bodies, minds and spirits at{" "}
             <Link href={"/accommodations"}>
-              <a className={styles.nav_link}>Wild Ocean Lodge</a>
+              <a className={classNames(styles.nav_link, styles.a)}>
+                Wild Ocean Lodge
+              </a>
             </Link>
             . Wild Ocean Lodge is an acreage on the Aspotogan Peninsula, Nova
             Scotia, embraced by forest on the west, overlooking St. Margarets
@@ -37,6 +40,7 @@ export default function Retreats() {
               href={"https://sailloftyoga.com/SailLoftBio.html"}
               target="_blank"
               rel="noreferrer"
+              className={styles.a}
             >
               Cathy Guest
             </a>{" "}
@@ -45,6 +49,7 @@ export default function Retreats() {
               href={"https://sailloftyoga.com/SailLoftAbout.html"}
               target="_blank"
               rel="noreferrer"
+              className={styles.a}
             >
               Sail Loft Yoga Studio
             </a>
@@ -75,6 +80,7 @@ export default function Retreats() {
               href={"https://www.freewheeling.ca/equipment-rentals/"}
               target="_blank"
               rel="noreferrer"
+              className={styles.a}
             >
               Freewheeling Adventures
             </a>{" "}
@@ -104,7 +110,7 @@ export default function Retreats() {
           </p>
           <p>
             <Link href={"/accommodations"}>
-              <a className={styles.nav_link}>
+              <a className={classNames(styles.nav_link, styles.a)}>
                 <strong>Wild Ocean Lodge</strong>
               </a>
             </Link>{" "}
@@ -132,6 +138,7 @@ export default function Retreats() {
                 href={"https://sailloftyoga.com/boathouse-loft-rental.html"}
                 target="_blank"
                 rel="noreferrer"
+                className={styles.a}
               >
                 Boathouse Apartment
               </a>{" "}

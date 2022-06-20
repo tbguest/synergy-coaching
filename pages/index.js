@@ -1,6 +1,7 @@
 import styles from "../styles/Home.module.css";
 import Link from "next/link";
 import { Splash } from "../components/Splash";
+import classNames from "classnames";
 
 export default function Home() {
   return (
@@ -28,7 +29,9 @@ export default function Home() {
         <h3>Book coaching, a retreat or ask a question</h3>
         <Link href={"/contact"}>
           <button className={styles.contact_button}>
-            <a className={styles.nav_link}>Get in touch</a>
+            <a className={classNames(styles.nav_link, styles.a)}>
+              Get in touch
+            </a>
           </button>
         </Link>
       </div>
