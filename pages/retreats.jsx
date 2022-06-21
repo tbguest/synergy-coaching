@@ -106,7 +106,9 @@ export default function Retreats() {
             className={styles.image}
           />
           <p>
-            <strong className={styles.emphasis}>Accommodations</strong>
+            <strong className={styles.emphasis}>
+              Retreat Fees/Accommodations
+            </strong>
           </p>
           <p>
             <Link href={"/accommodations"}>

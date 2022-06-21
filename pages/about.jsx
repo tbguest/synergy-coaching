@@ -61,13 +61,11 @@ export default function About() {
         <div className={styles.page_grid_text}>
           <div className={styles.fixed_layout}>
             <p>The values that guide my life</p>
-            <p className={styles.stylized}>Vitality,</p>
+            <p className={styles.stylized}>Vitality</p>
             <p className={classNames(styles.inset1, styles.stylized)}>
-              Connection,
+              Connection
             </p>
-            <p className={classNames(styles.inset2, styles.stylized)}>
-              Growth,
-            </p>
+            <p className={classNames(styles.inset2, styles.stylized)}>Growth</p>
             <p className={classNames(styles.inset3, styles.stylized)}>
               Creativity
             </p>
