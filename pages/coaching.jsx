@@ -20,6 +20,7 @@ export default function Coaching() {
               }
               target="_blank"
               rel="noreferrer"
+              className={styles.a}
             >
               International Coaching Federation
             </a>{" "}
@@ -66,9 +67,9 @@ export default function Coaching() {
         <ContactButton
           style={{
             display: "block",
-            "margin-left": "auto",
-            "margin-right": "auto",
-            "margin-top": "1rem",
+            marginLeft: "auto",
+            marginRight: "auto",
+            marginTop: "1rem",
           }}
         >
           Learn more

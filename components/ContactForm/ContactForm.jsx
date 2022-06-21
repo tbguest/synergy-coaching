@@ -92,8 +92,6 @@ const ContactForm = ({ children }) => {
     handleFormStateReset();
   };
 
-  console.log("here");
-
   return (
     <>
       <form onSubmit={handleSubmit} className={styles.form}>

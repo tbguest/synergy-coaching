@@ -89,9 +89,9 @@ export default function Accommodations() {
         <ContactButton
           style={{
             display: "block",
-            "margin-left": "auto",
-            "margin-right": "auto",
-            "margin-top": "1rem",
+            marginLeft: "auto",
+            marginRight: "auto",
+            marginTop: "1rem",
           }}
         >
           Reach out
