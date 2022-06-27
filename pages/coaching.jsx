@@ -42,7 +42,7 @@ export default function Coaching() {
           </p>
           <p>
             Through coaching conversations, you will find clarity about your
-            priorities, enhance your self- awareness, discover sources for
+            priorities, enhance your self-awareness, discover sources for
             resiliency and strength, align with your deepest values, and gain
             perspectives that liberate you.
           </p>

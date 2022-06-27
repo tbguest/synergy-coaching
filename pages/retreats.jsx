@@ -62,10 +62,10 @@ export default function Retreats() {
           </p>
 
           <p>
-            <strong>Check-in:</strong> 5:45 - 7:45pm, Friday, July 22nd
+            <strong>Check-in:</strong> 5:45 - 7:45 pm, Friday, July 22nd
           </p>
           <p>
-            <strong>Retreat starts:</strong> 8pm, Friday, July 22nd
+            <strong>Retreat starts:</strong> 8 pm, Friday, July 22nd
           </p>
           <p>
             <strong>Retreat ends:</strong> 11 am, Sunday, July 24th
