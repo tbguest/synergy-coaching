@@ -41,6 +41,10 @@
   padding: 3rem;
 }
 
+.contact_refer_content h2 {
+  font-size: 1.4rem;
+}
+
 .contact_button {
   background-color: var(--font-color-primary);
   border: none;

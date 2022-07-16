@@ -1,8 +1,6 @@
-import styles from "../styles/Home.module.css";
-import Link from "next/link";
-import { Splash } from "../components/Splash";
-import classNames from "classnames";
 import { NavButton } from "../components/NavButton";
+import { Splash } from "../components/Splash";
+import styles from "../styles/Home.module.css";
 
 export default function Home() {
   return (
@@ -27,7 +25,7 @@ export default function Home() {
         </div>
       </div>
       <div className={styles.contact_refer_content}>
-        <h3>Book coaching, a retreat or ask a question</h3>
+        <h2>Book coaching, a retreat or ask a question</h2>
         <NavButton
           page="contact"
           style={{
