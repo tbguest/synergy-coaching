@@ -5,6 +5,10 @@ import Link from "next/link";
 import { GiCurledLeaf } from "react-icons/gi";
 import classNames from "classnames";
 
+export async function getStaticProps() {
+  return { props: { title: "| Retreats", description: "Retreats page" } };
+}
+
 export default function Retreats() {
   return (
     <div className={styles.container}>

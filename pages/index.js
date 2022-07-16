@@ -2,6 +2,10 @@ import { NavButton } from "../components/NavButton";
 import { Splash } from "../components/Splash";
 import styles from "../styles/Home.module.css";
 
+export async function getStaticProps() {
+  return { props: { title: "", description: "Home page" } };
+}
+
 export default function Home() {
   return (
     <div className={styles.container}>

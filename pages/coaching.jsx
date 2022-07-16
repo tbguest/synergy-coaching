@@ -2,6 +2,10 @@ import styles from "../styles/Page.module.css";
 import Image from "next/image";
 import { NavButton } from "../components/NavButton";
 
+export async function getStaticProps() {
+  return { props: { title: "| Coaching", description: "Coaching page" } };
+}
+
 export default function Coaching() {
   return (
     <div className={styles.container}>

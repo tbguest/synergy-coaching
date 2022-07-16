@@ -1,6 +1,10 @@
 import styles from "../styles/Page.module.css";
 import { ContactForm } from "../components/ContactForm";
 
+export async function getStaticProps() {
+  return { props: { title: "| Contact", description: "Contact page" } };
+}
+
 export default function Contact() {
   return (
     <div className={styles.container}>

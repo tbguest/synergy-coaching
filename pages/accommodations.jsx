@@ -2,6 +2,12 @@ import styles from "../styles/Page.module.css";
 import Image from "next/image";
 import { NavButton } from "../components/NavButton";
 
+export async function getStaticProps() {
+  return {
+    props: { title: "| Accommodations", description: "Accommodations page" },
+  };
+}
+
 export default function Accommodations() {
   return (
     <div className={styles.container}>

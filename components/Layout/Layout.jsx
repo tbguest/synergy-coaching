@@ -4,13 +4,13 @@ import { Footer } from "../Footer";
 import styles from "./Layout.module.css";
 import Head from "next/head";
 
-const Layout = ({ children, documentHead }) => {
-  const title = `Wild Ocean Coaching ${documentHead?.title ?? ""}`;
+const Layout = ({ children }) => {
+  const title = `Wild Ocean Coaching ${children?.props?.title ?? ""}`;
   return (
     <>
       <Head>
         <title>{title}</title>
-        <meta name="description" content={documentHead?.description ?? ""} />
+        <meta name="description" content={children?.props?.description ?? ""} />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar />

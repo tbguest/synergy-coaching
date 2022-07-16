@@ -3,6 +3,10 @@ import Image from "next/image";
 import { NavButton } from "../components/NavButton";
 import classNames from "classnames";
 
+export async function getStaticProps() {
+  return { props: { title: "| About", description: "About page" } };
+}
+
 export default function About() {
   return (
     <div className={styles.container}>
