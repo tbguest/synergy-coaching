@@ -1,7 +1,34 @@
-/* @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&display=swap"); */
-@import url("https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Marathi:ital@0;1&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&display=swap");
+/* cinzel-decorative-regular - latin */
+@font-face {
+  font-family: "Cinzel Decorative";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""),
+    url("/fonts/cinzel-decorative-v14-latin-regular.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("/fonts/cinzel-decorative-v14-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* cinzel-decorative-700 - latin */
+@font-face {
+  font-family: "Cinzel Decorative";
+  font-style: normal;
+  font-weight: 700;
+  src: local(""),
+    url("/fonts/cinzel-decorative-v14-latin-700.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("/fonts/cinzel-decorative-v14-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* tiro-devanagari-marathi-regular - latin */
+@font-face {
+  font-family: "Tiro Devanagari Marathi";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""),
+    url("/fonts/tiro-devanagari-marathi-v2-latin-regular.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("/fonts/tiro-devanagari-marathi-v2-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
 
 html,
 body {
@@ -14,7 +41,6 @@ body {
 
 a {
   color: inherit;
-  /* color: #0645ad; */
   text-decoration: none;
 }
 
@@ -45,7 +71,6 @@ button {
   --content-max-width-twocolumn: 64rem;
   --footer-height: 7rem;
   --color-primary: rgb(70, 130, 180);
-  /* --color-primary: rgb(241, 221, 182); */
   --color-primary-hover: #5093c9;
   --color-secondary: #ffeccb;
   --border-radius: 4px;
