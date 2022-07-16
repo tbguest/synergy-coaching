@@ -46,6 +46,7 @@ const Navbar = () => {
         <button
           className={styles.burger_button}
           onClick={() => setMenuOpen(!menuOpen)}
+          aria-label="Close menu"
         >
           <FiX className={styles.burger} />
         </button>
@@ -53,6 +54,7 @@ const Navbar = () => {
         <button
           className={styles.burger_button}
           onClick={() => setMenuOpen(!menuOpen)}
+          aria-label="Open menu"
         >
           <FiMenu className={styles.burger} />
         </button>

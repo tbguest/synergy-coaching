@@ -1,6 +1,6 @@
 import styles from "../styles/Page.module.css";
 import Image from "next/image";
-import { ContactButton } from "../components/ContactButton";
+import { NavButton } from "../components/NavButton";
 import classNames from "classnames";
 
 export default function About() {
@@ -73,7 +73,8 @@ export default function About() {
               Living in harmony with Nature
             </p>
           </div>
-          <ContactButton
+          <NavButton
+            page="contact"
             style={{
               display: "block",
               marginLeft: "auto",
@@ -82,7 +83,7 @@ export default function About() {
             }}
           >
             Reach out
-          </ContactButton>
+          </NavButton>
         </div>
       </div>
     </div>

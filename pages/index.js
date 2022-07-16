@@ -2,6 +2,7 @@ import styles from "../styles/Home.module.css";
 import Link from "next/link";
 import { Splash } from "../components/Splash";
 import classNames from "classnames";
+import { NavButton } from "../components/NavButton";
 
 export default function Home() {
   return (
@@ -27,13 +28,17 @@ export default function Home() {
       </div>
       <div className={styles.contact_refer_content}>
         <h3>Book coaching, a retreat or ask a question</h3>
-        <Link href={"/contact"}>
-          <button className={styles.contact_button}>
-            <a className={classNames(styles.nav_link, styles.a)}>
-              Get in touch
-            </a>
-          </button>
-        </Link>
+        <NavButton
+          page="contact"
+          style={{
+            display: "block",
+            marginLeft: "auto",
+            marginRight: "auto",
+            marginTop: "1rem",
+          }}
+        >
+          Get in touch
+        </NavButton>
       </div>
     </div>
   );

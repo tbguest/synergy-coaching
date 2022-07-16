@@ -1,6 +1,6 @@
 import styles from "../styles/Page.module.css";
 import Image from "next/image";
-import { ContactButton } from "../components/ContactButton";
+import { NavButton } from "../components/NavButton";
 import Link from "next/link";
 import { GiCurledLeaf } from "react-icons/gi";
 import classNames from "classnames";
@@ -148,7 +148,8 @@ export default function Retreats() {
             </li>
           </ul>
         </div>
-        <ContactButton
+        <NavButton
+          page="contact"
           style={{
             display: "block",
             marginLeft: "auto",
@@ -157,7 +158,7 @@ export default function Retreats() {
           }}
         >
           Reach out
-        </ContactButton>
+        </NavButton>
       </div>
     </div>
   );

@@ -148,8 +148,9 @@ const ContactForm = ({ children }) => {
           }}
         ></textarea>
         <div className={styles.button_container}>
-          {/* <button className={styles.button} onClick={handleFormStateReset}> */}
-          <button className={styles.button}>{buttonText}</button>
+          <button className={styles.button} aria-label="Send message">
+            {buttonText}
+          </button>
         </div>
         {showSuccessMessage ? (
           <p>Email sent!</p>

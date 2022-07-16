@@ -1,6 +1,6 @@
 import styles from "../styles/Page.module.css";
 import Image from "next/image";
-import { ContactButton } from "../components/ContactButton";
+import { NavButton } from "../components/NavButton";
 
 export default function Coaching() {
   return (
@@ -64,7 +64,8 @@ export default function Coaching() {
             you to live a meaningful life and embrace your potential.
           </em>
         </div>
-        <ContactButton
+        <NavButton
+          page="contact"
           style={{
             display: "block",
             marginLeft: "auto",
@@ -73,7 +74,7 @@ export default function Coaching() {
           }}
         >
           Learn more
-        </ContactButton>
+        </NavButton>
       </div>
     </div>
   );

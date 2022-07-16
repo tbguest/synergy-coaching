@@ -1,6 +1,6 @@
 import styles from "../styles/Page.module.css";
 import Image from "next/image";
-import { ContactButton } from "../components/ContactButton";
+import { NavButton } from "../components/NavButton";
 
 export default function Accommodations() {
   return (
@@ -86,7 +86,8 @@ export default function Accommodations() {
             main house, or in the guesthouse if you are renting it.
           </em>
         </div>
-        <ContactButton
+        <NavButton
+          page="contact"
           style={{
             display: "block",
             marginLeft: "auto",
@@ -95,7 +96,7 @@ export default function Accommodations() {
           }}
         >
           Reach out
-        </ContactButton>
+        </NavButton>
       </div>
     </div>
   );
