@@ -77,17 +77,7 @@ export default function About() {
               Living in harmony with Nature
             </p>
           </div>
-          <NavButton
-            page="contact"
-            style={{
-              display: "block",
-              marginLeft: "auto",
-              marginRight: "auto",
-              marginTop: "1rem",
-            }}
-          >
-            Reach out
-          </NavButton>
+          <NavButton page="contact">Reach out</NavButton>
         </div>
       </div>
     </div>

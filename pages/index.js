@@ -35,17 +35,7 @@ export default function Home() {
       </div>
       <div className={styles.contact_refer_content}>
         <h2>Book coaching, a retreat or ask a question</h2>
-        <NavButton
-          page="contact"
-          style={{
-            display: "block",
-            marginLeft: "auto",
-            marginRight: "auto",
-            marginTop: "1rem",
-          }}
-        >
-          Get in touch
-        </NavButton>
+        <NavButton page="contact">Get in touch</NavButton>
       </div>
     </div>
   );

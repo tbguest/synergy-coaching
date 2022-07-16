@@ -1,17 +1,13 @@
 import Link from "next/link";
 import styles from "./NavButton.module.css";
 
-const NavButton = ({ page, children, style }) => {
+const NavButton = ({ page, children }) => {
   return (
-    <Link href={"/" + page}>
-      <button
-        style={style}
-        className={styles.contact_button}
-        aria-label={`Go to ${page} page`}
-      >
-        <a className={styles.nav_link}>{children}</a>
-      </button>
-    </Link>
+    <button className={styles.button} aria-label={`Go to ${page} page`}>
+      <Link href={`/${page}`} className={styles.nav_link}>
+        <a className={styles.nav_anchor}>{children}</a>
+      </Link>
+    </button>
   );
 };
 

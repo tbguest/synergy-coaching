@@ -68,17 +68,7 @@ export default function Coaching() {
             you to live a meaningful life and embrace your potential.
           </em>
         </div>
-        <NavButton
-          page="contact"
-          style={{
-            display: "block",
-            marginLeft: "auto",
-            marginRight: "auto",
-            marginTop: "1rem",
-          }}
-        >
-          Learn more
-        </NavButton>
+        <NavButton page="contact">Learn more</NavButton>
       </div>
     </div>
   );

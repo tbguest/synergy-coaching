@@ -92,17 +92,7 @@ export default function Accommodations() {
             main house, or in the guesthouse if you are renting it.
           </em>
         </div>
-        <NavButton
-          page="contact"
-          style={{
-            display: "block",
-            marginLeft: "auto",
-            marginRight: "auto",
-            marginTop: "1rem",
-          }}
-        >
-          Reach out
-        </NavButton>
+        <NavButton page="contact">Reach out</NavButton>
       </div>
     </div>
   );
