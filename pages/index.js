@@ -3,7 +3,12 @@ import { Splash } from "../components/Splash";
 import styles from "../styles/Home.module.css";
 
 export async function getStaticProps() {
-  return { props: { title: "", description: "Home page" } };
+  return {
+    props: {
+      title: "",
+      description: "Professional coaching and wellness retreats",
+    },
+  };
 }
 
 export default function Home() {
