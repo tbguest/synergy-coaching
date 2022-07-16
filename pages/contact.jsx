@@ -1,5 +1,6 @@
 import styles from "../styles/Page.module.css";
 import { ContactForm } from "../components/ContactForm";
+import Image from "next/image";
 
 export async function getStaticProps() {
   return { props: { title: "| Contact", description: "Contact page" } };
@@ -8,7 +9,16 @@ export async function getStaticProps() {
 export default function Contact() {
   return (
     <div className={styles.container}>
-      <div className={styles.image_header_beach}></div>
+      <div className={styles.banner_container}>
+        <Image
+          width={4621}
+          height={1327}
+          layout="fill"
+          src={"/beach_cropped.jpg"}
+          alt={"Tropical beach at sunset"}
+          className={styles.banner_image_justify_center}
+        />
+      </div>
       <div className={styles.content_title}>
         <h1>Contact</h1>
         <hr className={styles.hr} />

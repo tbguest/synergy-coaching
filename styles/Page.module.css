@@ -4,72 +4,25 @@
   top: var(--nav-height);
 }
 
-.image_header {
+.banner_image_justify_left {
+  object-fit: cover;
+  object-position: 0 100%;
+}
+
+.banner_image_justify_center_left {
+  object-fit: cover;
+  object-position: 17% 100%;
+}
+
+.banner_image_justify_center {
+  object-fit: cover;
+  object-position: 50% 100%;
+}
+
+.banner_container {
   position: relative;
   width: 100%;
   height: var(--img-header-height);
-  background-image: url("/meadow_cropped.jpg");
-  background-size: cover;
-  bottom: 0;
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  text-shadow: 0px 0px 4px #000000;
-}
-
-.image_header_beach {
-  position: relative;
-  width: 100;
-  height: var(--img-header-height);
-  background-image: url("/beach_cropped.jpg");
-  background-size: cover;
-  bottom: 0;
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  text-shadow: 0px 0px 4px #000000;
-}
-
-.image_header_surf {
-  position: relative;
-  width: 100%;
-  height: var(--img-header-height);
-  background-image: url("/surf_cropped.jpg");
-  background-size: cover;
-  bottom: 0;
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  text-shadow: 0px 0px 4px #000000;
-}
-
-.image_header_longboard {
-  position: relative;
-  width: 100%;
-  height: var(--img-header-height);
-  background-image: url("/longboard_cropped.jpg");
-  background-size: cover;
-  bottom: 0;
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  text-shadow: 0px 0px 4px #000000;
-}
-
-.image_header_rental {
-  position: relative;
-  width: 100%;
-  height: var(--img-header-height);
-  background-image: url("/rental_cropped.jpg");
-  background-size: cover;
   bottom: 0;
   margin: 0;
   display: flex;
@@ -101,70 +54,6 @@
   .action_items {
     font-size: 2rem;
     margin: 2rem;
-  }
-}
-
-@media (max-width: 1200px) {
-  .image_header_rental {
-    position: relative;
-    width: 100%;
-    height: var(--img-header-height);
-    background-image: url("/rental_tablet.jpg");
-    background-size: cover;
-    bottom: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    text-shadow: 0px 0px 4px #000000;
-  }
-}
-
-@media (max-width: 600px) {
-  .image_header_longboard {
-    position: relative;
-    width: 100%;
-    height: var(--img-header-height);
-    background-image: url("/longboard_mobile.jpg");
-    background-size: cover;
-    bottom: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    text-shadow: 0px 0px 4px #000000;
-  }
-
-  .image_header_surf {
-    position: relative;
-    width: 100%;
-    height: var(--img-header-height);
-    background-image: url("/surf_mobile.jpg");
-    background-size: cover;
-    bottom: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    text-shadow: 0px 0px 4px #000000;
-  }
-
-  .image_header_rental {
-    position: relative;
-    width: 100%;
-    height: var(--img-header-height);
-    background-image: url("/rental_mobile.jpg");
-    background-size: cover;
-    bottom: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    text-shadow: 0px 0px 4px #000000;
   }
 }
 

@@ -10,12 +10,22 @@ export async function getStaticProps() {
 export default function About() {
   return (
     <div className={styles.container}>
-      <div className={styles.image_header_longboard}></div>
+      <div className={styles.banner_container}>
+        <Image
+          width={3840}
+          height={1101}
+          layout="fill"
+          src={"/longboard_cropped.jpg"}
+          alt={
+            "Person sitting on a long surfboard in green, calm water, viewed from above"
+          }
+          className={styles.banner_image_justify_center}
+        />
+      </div>{" "}
       <div className={styles.content_title}>
         <h1>About Me</h1>
         <hr className={styles.hr} />
       </div>
-
       <div className={styles.page_content}>
         <h2>Zenovia Ursuliak MD, PhD, FRCPC</h2>
         <p>
@@ -51,7 +61,6 @@ export default function About() {
           nature, my most precious medicine.
         </p>
       </div>
-
       <div className={styles.page_grid}>
         <div className={styles.image}>
           <Image

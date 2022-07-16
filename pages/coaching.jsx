@@ -9,7 +9,16 @@ export async function getStaticProps() {
 export default function Coaching() {
   return (
     <div className={styles.container}>
-      <div className={styles.image_header_surf}></div>
+      <div className={styles.banner_container}>
+        <Image
+          width={3264}
+          height={1002}
+          layout="fill"
+          src={"/surf_cropped.jpg"}
+          alt={"Silouetted person with a surfboard by the sea"}
+          className={styles.banner_image_justify_center_left}
+        />
+      </div>
       <div className={styles.content_title}>
         <h1>Coaching</h1>
         <hr className={styles.hr} />

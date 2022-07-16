@@ -12,7 +12,18 @@ export async function getStaticProps() {
 export default function Retreats() {
   return (
     <div className={styles.container}>
-      <div className={styles.image_header}></div>
+      <div className={styles.banner_container}>
+        <Image
+          width={3648}
+          height={1124}
+          layout="fill"
+          src={"/meadow_cropped.jpg"}
+          alt={
+            "Green grassy meadow and several buildings on a hill overlooking the sea"
+          }
+          className={styles.banner_image_justify_left}
+        />
+      </div>
       <div className={styles.content_title}>
         <h1>Wellness Retreats</h1>
         <hr className={styles.hr} />

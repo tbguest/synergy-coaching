@@ -11,7 +11,16 @@ export async function getStaticProps() {
 export default function Accommodations() {
   return (
     <div className={styles.container}>
-      <div className={styles.image_header_rental}></div>
+      <div className={styles.banner_container}>
+        <Image
+          width={1809}
+          height={650}
+          layout="fill"
+          src={"/rental_cropped.jpg"}
+          alt={"Two blue-roofed buildings on a hill overlooking the sea"}
+          className={styles.banner_image_justify_center}
+        />
+      </div>
       <div className={styles.content_title}>
         <h1>Accommodations</h1>
         <hr className={styles.hr} />
