@@ -5,7 +5,6 @@ import { PrismicText, PrismicRichText } from "@prismicio/react";
 import { createClient } from "../prismicio";
 
 const loader = ({ src, width, height, quality }) => {
-  // return `https://example.com/${src}?w=${width}&q=${quality || 75}`;
   return `${src}?auto=compress,format&w=${width}&h=${height}&q=${
     quality || 75
   }`;
@@ -64,7 +63,9 @@ export default function Coaching({ page }) {
             <PrismicRichText field={page.data.contentAside} />
           </em>
         </div>
-        <NavButton page="contact">Learn more</NavButton>
+        <NavButton page="contact">
+          <PrismicText field={page.data.buttonText} />
+        </NavButton>
       </div>
     </div>
   );
