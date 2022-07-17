@@ -1,0 +1,37 @@
+{
+  "id": "f81e4851-8679-4988-8cbe-d70636aadfcf",
+  "uid": "tempora-exercitationem-voluptas",
+  "type": "page",
+  "data": {
+    "title": [
+      {
+        "type": "paragraph",
+        "text": "Dolor in in deserunt consequat incididunt cillum quis nostrud nisi ea.",
+        "spans": []
+      }
+    ],
+    "contentMain": [
+      {
+        "type": "paragraph",
+        "text": "Non eu ad fugiat id exercitation veniam anim do quis magna velit dolore elit. Do ea culpa aute qui magna culpa voluptate minim commodo voluptate. Tempor magna sint et ea culpa anim officia do deserunt magna pariatur elit proident.",
+        "spans": []
+      }
+    ],
+    "image": {
+      "dimensions": {
+        "width": 900,
+        "height": 500
+      },
+      "alt": "Placeholder image",
+      "copyright": null,
+      "url": "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=900&h=500&fit=crop"
+    },
+    "contentAside": [
+      {
+        "type": "paragraph",
+        "text": "Eu id proident aute cupidatat irure irure nostrud culpa adipisicing ut ipsum ea consequat. Voluptate tempor incididunt voluptate exercitation.",
+        "spans": []
+      }
+    ]
+  }
+}
