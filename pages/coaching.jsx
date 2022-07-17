@@ -2,13 +2,7 @@ import styles from "../styles/Page.module.css";
 import Image from "next/image";
 import { NavButton } from "../components/NavButton";
 import { PrismicText, PrismicRichText } from "@prismicio/react";
-import { createClient } from "../prismicio";
-
-const loader = ({ src, width, height, quality }) => {
-  return `${src}?auto=compress,format&w=${width}&h=${height}&q=${
-    quality || 75
-  }`;
-};
+import { createClient, imageLoader } from "../prismicio";
 
 export async function getStaticProps() {
   // Client used to fetch CMS content.
@@ -50,7 +44,7 @@ export default function Coaching({ page }) {
         </div>
         <div className={styles.content_image}>
           <Image
-            loader={loader}
+            loader={imageLoader}
             // width={3015}
             // height={3472}
             width={page.data.image.dimensions.width}
