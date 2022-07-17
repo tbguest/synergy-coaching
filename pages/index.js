@@ -6,7 +6,8 @@ export async function getStaticProps() {
   return {
     props: {
       title: "",
-      description: "Professional coaching and wellness retreats",
+      description:
+        "Wild Ocean Coaching and Retreats: Professional coaching services and wellness retreats",
     },
   };
 }
