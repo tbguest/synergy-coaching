@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.wildoceancoaching.ca
+
+# Sitemaps
+Sitemap: https://www.wildoceancoaching.ca/sitemap.xml
