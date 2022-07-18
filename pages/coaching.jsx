@@ -18,8 +18,6 @@ export async function getStaticProps() {
 }
 
 export default function Coaching({ page }) {
-  console.log("page", page);
-
   return (
     <div className={styles.container}>
       <div className={styles.banner_container}>
