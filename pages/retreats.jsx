@@ -14,14 +14,13 @@ export default function Retreats() {
     <div className={styles.container}>
       <div className={styles.banner_container}>
         <Image
-          width={3648}
-          height={1124}
           layout="fill"
-          src={"/meadow_cropped.jpg"}
+          src={"/images/compressed/meadow.jpg"}
           alt={
             "Green grassy meadow and several buildings on a hill overlooking the sea"
           }
           className={styles.banner_image_justify_left}
+          priority
         />
       </div>
       <div className={styles.content_title}>
@@ -116,7 +115,7 @@ export default function Retreats() {
           <Image
             width={960}
             height={1280}
-            src={"/butterfly.jpg"}
+            src={"/images/compressed/butterfly.jpg"}
             alt={"Butterfly atop a flower"}
             className={styles.image}
           />

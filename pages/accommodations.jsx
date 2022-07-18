@@ -13,12 +13,11 @@ export default function Accommodations() {
     <div className={styles.container}>
       <div className={styles.banner_container}>
         <Image
-          width={1809}
-          height={650}
           layout="fill"
-          src={"/rental_cropped.jpg"}
+          src={"/images/compressed/rental.jpg"}
           alt={"Two blue-roofed buildings on a hill overlooking the sea"}
           className={styles.banner_image_justify_center}
+          priority
         />
       </div>
       <div className={styles.content_title}>
@@ -89,7 +88,7 @@ export default function Accommodations() {
           <Image
             width={749}
             height={998}
-            src={"/cabin_summer.png"}
+            src={"/images/compressed/cabin.png"}
             alt={"Rustic cabin in a meadow on a green summer day"}
             className={styles.image}
           />

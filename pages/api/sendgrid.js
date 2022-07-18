@@ -1,13 +1,13 @@
 import sendgrid from "@sendgrid/mail";
 
-sendgrid.setApiKey(process.env.SENDGRID_API_KEY_PROD);
+sendgrid.setApiKey(process.env.SENDGRID_API_KEY);
 
 async function sendEmail(req, res) {
   try {
     // console.log("REQ.BODY", req.body);
     await sendgrid.send({
-      to: process.env.TO_EMAIL_ADDRESS_PROD, // Your email where you'll receive emails
-      from: process.env.FROM_EMAIL_ADDRESS_PROD, // your website email address here
+      to: process.env.TO_EMAIL_ADDRESS, // Your email where you'll receive emails
+      from: process.env.FROM_EMAIL_ADDRESS, // your website email address here
       replyTo: `${req.body.email}`,
       subject: `WILD OCEAN COACHING: ${req.body.subject}`,
       html: `<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">

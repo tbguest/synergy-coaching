@@ -24,12 +24,11 @@ export default function Coaching({ page }) {
     <div className={styles.container}>
       <div className={styles.banner_container}>
         <Image
-          width={3264}
-          height={1002}
           layout="fill"
-          src={"/surf_cropped.jpg"}
+          src={"/images/compressed/surf.jpg"}
           alt={"Silouetted person with a surfboard by the sea"}
           className={styles.banner_image_justify_center_left}
+          priority
         />
       </div>
       <div className={styles.content_title}>
@@ -45,8 +44,6 @@ export default function Coaching({ page }) {
         <div className={styles.content_image}>
           <Image
             loader={imageLoader}
-            // width={3015}
-            // height={3472}
             width={page.data.image.dimensions.width}
             height={page.data.image.dimensions.height}
             src={page.data.image.url}
