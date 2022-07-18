@@ -14,14 +14,13 @@ export default function Retreats() {
     <div className={styles.container}>
       <div className={styles.banner_container}>
         <Image
-          width={3648}
-          height={1124}
           layout="fill"
           src={"/meadow_cropped.jpg"}
           alt={
             "Green grassy meadow and several buildings on a hill overlooking the sea"
           }
           className={styles.banner_image_justify_left}
+          priority
         />
       </div>
       <div className={styles.content_title}>

@@ -11,12 +11,11 @@ export default function Contact() {
     <div className={styles.container}>
       <div className={styles.banner_container}>
         <Image
-          width={4621}
-          height={1327}
           layout="fill"
           src={"/beach_cropped.jpg"}
           alt={"Tropical beach at sunset"}
           className={styles.banner_image_justify_center}
+          priority
         />
       </div>
       <div className={styles.content_title}>

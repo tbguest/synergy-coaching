@@ -12,13 +12,12 @@ export default function About() {
     <div className={styles.container}>
       <div className={styles.banner_container}>
         <Image
-          width={3840}
-          height={1101}
           layout="fill"
           src={"/longboard_cropped.jpg"}
           alt={
             "Person sitting on a long surfboard in green, calm water, viewed from above"
           }
+          priority
           className={styles.banner_image_justify_center}
         />
       </div>{" "}
