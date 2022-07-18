@@ -12,7 +12,7 @@ export default function Contact() {
       <div className={styles.banner_container}>
         <Image
           layout="fill"
-          src={"/beach_cropped.jpg"}
+          src={"/images/compressed/beach.jpg"}
           alt={"Tropical beach at sunset"}
           className={styles.banner_image_justify_center}
           priority

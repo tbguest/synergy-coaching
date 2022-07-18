@@ -15,7 +15,7 @@ export default function Retreats() {
       <div className={styles.banner_container}>
         <Image
           layout="fill"
-          src={"/meadow_cropped.jpg"}
+          src={"/images/compressed/meadow.jpg"}
           alt={
             "Green grassy meadow and several buildings on a hill overlooking the sea"
           }
@@ -115,7 +115,7 @@ export default function Retreats() {
           <Image
             width={960}
             height={1280}
-            src={"/butterfly.jpg"}
+            src={"/images/compressed/butterfly.jpg"}
             alt={"Butterfly atop a flower"}
             className={styles.image}
           />

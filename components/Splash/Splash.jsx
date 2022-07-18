@@ -7,7 +7,7 @@ const Splash = () => {
     <div className={styles.splash_container}>
       <Image
         layout="fill"
-        src={"/wave_cropped.jpg"}
+        src={"/images/compressed/wave.jpg"}
         alt={
           "Barelling wave crashing in blue-green water with an empty beach in the background"
         }

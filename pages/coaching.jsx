@@ -12,7 +12,7 @@ export default function Coaching() {
       <div className={styles.banner_container}>
         <Image
           layout="fill"
-          src={"/surf_cropped.jpg"}
+          src={"/images/compressed/surf.jpg"}
           alt={"Silouetted person with a surfboard by the sea"}
           className={styles.banner_image_justify_center_left}
           priority
@@ -67,7 +67,7 @@ export default function Coaching() {
           <Image
             width={3015}
             height={3472}
-            src={"/rocks.jpg"}
+            src={"/images/compressed/rocks.jpg"}
             alt={"Stacked rocks beside the ocean"}
             className={styles.image}
           />

@@ -13,7 +13,7 @@ export default function About() {
       <div className={styles.banner_container}>
         <Image
           layout="fill"
-          src={"/longboard_cropped.jpg"}
+          src={"/images/compressed/longboard.jpg"}
           alt={
             "Person sitting on a long surfboard in green, calm water, viewed from above"
           }
@@ -66,7 +66,7 @@ export default function About() {
             width={884}
             height={1053}
             objectFit={"contain"}
-            src={"/zen_cropped.jpg"}
+            src={"/images/compressed/zen.jpg"}
             alt={"A headshot of the author"}
           />
         </div>
