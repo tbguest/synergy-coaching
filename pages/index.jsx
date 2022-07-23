@@ -1,8 +1,8 @@
-import { NavButton } from "../components/NavButton";
+import { PrismicRichText, PrismicText, SliceZone } from "@prismicio/react";
 import { Splash } from "../components/Splash";
+import { createClient } from "../prismicio";
+import { components } from "../slices";
 import styles from "../styles/Home.module.css";
-import { PrismicText, PrismicRichText } from "@prismicio/react";
-import { createClient, imageLoader } from "../prismicio";
 
 export async function getStaticProps() {
   // Client used to fetch CMS content.
@@ -35,12 +35,7 @@ export default function Home({ page }) {
           <PrismicRichText field={page.data.contentMain} />
         </div>
       </div>
-      <div className={styles.contact_refer_content}>
-        <h2>Book coaching, a retreat or ask a question</h2>
-        <NavButton page="contact">
-          <PrismicText field={page.data.buttonText} />
-        </NavButton>
-      </div>
+      <SliceZone slices={page.data.slices} components={components} />
     </div>
   );
 }

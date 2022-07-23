@@ -19,6 +19,14 @@
           "blocks": 1
         }
       }
+    },
+    "retreatevent": {
+      "description": {
+        "config": {
+          "patternType": "PARAGRAPH",
+          "blocks": 1
+        }
+      }
     }
   },
   "slices": {
@@ -32,6 +40,16 @@
             }
           }
         }
+      }
+    },
+    "RetreatCards": {
+      "default": {
+        "primary": {}
+      }
+    },
+    "CallToAction": {
+      "default": {
+        "primary": {}
       }
     }
   }

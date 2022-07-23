@@ -1,8 +1,8 @@
-import styles from "../styles/Page.module.css";
+import { PrismicRichText, PrismicText, SliceZone } from "@prismicio/react";
 import Image from "next/image";
-import { NavButton } from "../components/NavButton";
-import { PrismicText, PrismicRichText } from "@prismicio/react";
 import { createClient, imageLoader } from "../prismicio";
+import { components } from "../slices";
+import styles from "../styles/Page.module.css";
 
 export async function getStaticProps() {
   // Client used to fetch CMS content.
@@ -56,10 +56,8 @@ export default function Accommodations({ page }) {
             <PrismicRichText field={page.data.contentAside} />
           </em>
         </div>
-        <NavButton page="contact">
-          <PrismicText field={page.data.buttonText} />
-        </NavButton>
       </div>
+      <SliceZone slices={page.data.slices} components={components} />
     </div>
   );
 }

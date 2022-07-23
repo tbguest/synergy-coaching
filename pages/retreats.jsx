@@ -1,15 +1,26 @@
-import styles from "../styles/Page.module.css";
+import { SliceZone } from "@prismicio/react";
+import classNames from "classnames";
 import Image from "next/image";
-import { NavButton } from "../components/NavButton";
 import Link from "next/link";
 import { GiCurledLeaf } from "react-icons/gi";
-import classNames from "classnames";
+import { createClient } from "../prismicio";
+import { components } from "../slices";
+import styles from "../styles/Page.module.css";
 
 export async function getStaticProps() {
-  return { props: { title: "| Retreats", description: "Retreats page" } };
+  // Client used to fetch CMS content.
+  const client = createClient();
+
+  // Page document for our homepage from the CMS.
+  const page = await client.getByUID("page", "retreats");
+
+  // Pass the homepage as prop to our page.
+  return {
+    props: { title: "| Retreats", description: "Retreats page", page },
+  };
 }
 
-export default function Retreats() {
+export default function Retreats({ page }) {
   return (
     <div className={styles.container}>
       <div className={styles.banner_container}>
@@ -162,8 +173,8 @@ export default function Retreats() {
             </li>
           </ul>
         </div>
-        <NavButton page="contact">Reach out</NavButton>
       </div>
+      <SliceZone slices={page.data.slices} components={components} />
     </div>
   );
 }

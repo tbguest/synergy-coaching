@@ -1,7 +1,7 @@
 import { PrismicRichText } from "@prismicio/react";
 import React from "react";
 
-const Text = ({ slice }) => (
+const RetreatCards = ({ slice }) => (
   <section>
     <span className="title">
       {slice.primary.title ? (
@@ -28,4 +28,4 @@ const Text = ({ slice }) => (
   </section>
 );
 
-export default Text;
+export default RetreatCards;
