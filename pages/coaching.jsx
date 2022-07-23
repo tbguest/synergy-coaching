@@ -1,12 +1,23 @@
-import styles from "../styles/Page.module.css";
+import { PrismicRichText, PrismicText, SliceZone } from "@prismicio/react";
 import Image from "next/image";
-import { NavButton } from "../components/NavButton";
+import { createClient, imageLoader } from "../prismicio";
+import { components } from "../slices";
+import styles from "../styles/Page.module.css";
 
 export async function getStaticProps() {
-  return { props: { title: "| Coaching", description: "Coaching page" } };
+  // Client used to fetch CMS content.
+  const client = createClient();
+
+  // Page document for our homepage from the CMS.
+  const page = await client.getByUID("page", "coaching");
+
+  // Pass the homepage as prop to our page.
+  return {
+    props: { title: "| Coaching", description: "Coaching page", page },
+  };
 }
 
-export default function Coaching() {
+export default function Coaching({ page }) {
   return (
     <div className={styles.container}>
       <div className={styles.banner_container}>
@@ -19,65 +30,30 @@ export default function Coaching() {
         />
       </div>
       <div className={styles.content_title}>
-        <h1>Coaching</h1>
+        <h1>
+          <PrismicText field={page.data.title} />
+        </h1>
         <hr className={styles.hr} />
       </div>
       <div className={styles.content}>
         <div className={styles.content_text}>
-          <p>
-            The{" "}
-            <a
-              href={
-                "https://experiencecoaching.com/?utm_source=ICF&amp%3Butm_medium=direct-link&amp%3Butm_campaign=icf-to-ec"
-              }
-              target="_blank"
-              rel="noreferrer"
-              className={styles.a}
-            >
-              International Coaching Federation
-            </a>{" "}
-            defines coaching as partnering with people in a thought-provoking
-            and creative process that inspires them to maximize their personal
-            and professional potential.
-          </p>
-          <p>
-            The coach is the expert in the coaching process, and you are the
-            expert in your own life&apos;s journey.
-          </p>
-          <p>
-            I am committed to being fully present and having impactful
-            conversations with you.
-          </p>
-          <p>
-            When you meet my intentions with your own intentions, our
-            conversation will generate momentum in your life.
-          </p>
-          <p>
-            Through coaching conversations, you will find clarity about your
-            priorities, enhance your self-awareness, discover sources for
-            resiliency and strength, align with your deepest values, and gain
-            perspectives that liberate you.
-          </p>
-          <p>
-            I invite you to fully commit to yourself and discover how coaching
-            will empower you to create the life you want.
-          </p>
+          <PrismicRichText field={page.data.contentMain} />
         </div>
         <div className={styles.content_image}>
           <Image
-            width={3015}
-            height={3472}
-            src={"/images/compressed/rocks.jpg"}
-            alt={"Stacked rocks beside the ocean"}
+            loader={imageLoader}
+            width={page.data.image.dimensions.width}
+            height={page.data.image.dimensions.height}
+            src={page.data.image.url}
+            alt={page.data.image.alt}
             className={styles.image}
           />
           <em className={styles.italics}>
-            Coaching occurs through transformative conversation that inspires
-            you to live a meaningful life and embrace your potential.
+            <PrismicRichText field={page.data.contentAside} />
           </em>
         </div>
-        <NavButton page="contact">Learn more</NavButton>
       </div>
+      <SliceZone slices={page.data.slices} components={components} />
     </div>
   );
 }

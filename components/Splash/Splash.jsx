@@ -15,7 +15,7 @@ const Splash = () => {
         priority
       />
       <div className={styles.action_items}>
-        <NavButton page="retreats">Explore retreats</NavButton>
+        <NavButton href="/retreats">Explore retreats</NavButton>
       </div>
     </div>
   );

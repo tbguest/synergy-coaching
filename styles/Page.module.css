@@ -112,10 +112,6 @@
   padding-left: calc(4 * var(--inset-text));
 }
 
-.a {
-  color: #0645ad;
-}
-
 .grid_button {
   display: flex;
   flex-direction: column;
